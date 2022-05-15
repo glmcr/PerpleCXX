@@ -1,0 +1,2 @@
+/usr/bin/ar qc libperplex.a  CMakeFiles/perplex.dir/nlib.f.o CMakeFiles/perplex.dir/olib.f.o CMakeFiles/perplex.dir/tlib.f.o CMakeFiles/perplex.dir/rlib.f.o CMakeFiles/perplex.dir/flib.f.o CMakeFiles/perplex.dir/resub.f.o CMakeFiles/perplex.dir/pslib.f.o CMakeFiles/perplex.dir/pscom.f.o CMakeFiles/perplex.dir/cont_lib.f.o CMakeFiles/perplex.dir/BLASlib.f.o
+/usr/bin/ranlib libperplex.a

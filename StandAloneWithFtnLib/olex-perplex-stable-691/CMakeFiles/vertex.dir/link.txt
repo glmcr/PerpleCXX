@@ -1,0 +1,1 @@
+/usr/bin/f95    -fPIC CMakeFiles/vertex.dir/vertex.f.o  -o vertex  libperplex.a 

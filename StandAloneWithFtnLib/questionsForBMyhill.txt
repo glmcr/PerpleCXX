@@ -1,0 +1,1 @@
+1). perplex.cpp::phaseq function: Could the oxides amounts be different than the starting amounts defined in the pyrolite.dat input file?
