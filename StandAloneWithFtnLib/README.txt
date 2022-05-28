@@ -15,4 +15,7 @@ at the same time) at some point later this year (2022).
 ---------------------------------------------------------------------
 1). cd perplex_stable
 2). make -f Makefile
-3). 
+3). cd ..
+4). g++ perpleCXXMain.cpp -o perpleCXXMain.xo -Iinclude -lperplex_cpp -Lperplex-stable
+5). export LD_LIBRARY_PATH=<path to>/PerpleCXX/StandAloneWithFtnLib/perplex-stable:$LD_LIBRARY_PATH
+6). ./perpleCXXMain.xo pyrolite

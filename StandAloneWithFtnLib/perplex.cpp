@@ -147,11 +147,13 @@ int ini_phaseq(char const inputfile[]) {
   /* TODO: check whether initialization succeeded or not,
    * and adjust return value accordingly */
 
-  fprintf(stdout,"ini_phaseq: END END END.\n");
+  fprintf(stdout,"ini_phaseq: END END END. cst6_.icomp=%d\n",cst6_.icomp);
   //fprintf(stdout,"ini_phaseq: exit 0\n") ;
   //exit(0);
-  
-  return 0;
+
+  return number_of_components();
+  //return cst6_.icomp;
+  //return 0;
 }
 	
 
@@ -162,7 +164,7 @@ void print_comp_order() {
    * this order.
    */
   int i;
-  fprintf(stdout, "Expecting compositions in the following order:\n");
+  fprintf(stdout, "cst6_.icomp=%i,Expecting compositions in the following order:\n",cst6_.icomp);
   for (i = 1; i <= cst6_.icomp; i++) {
     fprintf(stderr, "\t%.5s ", csta4_.cname[i-1]);
   }
