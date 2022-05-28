@@ -12,3 +12,7 @@ It is possible that this standalone code could be used to do  metamorphic petrol
 calculations to produce pseudosections (by using it through a series of scripts running
 at the same time) at some point later this year (2022).   
 
+---------------------------------------------------------------------
+1). cd perplex_stable
+2). make -f Makefile
+3). 
