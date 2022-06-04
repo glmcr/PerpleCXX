@@ -13,9 +13,10 @@ calculations to produce pseudosections (by using it through a series of scripts 
 at the same time) at some point later this year (2022).   
 
 ---------------------------------------------------------------------
-1). cd perplex_stable
-2). make -f Makefile
-3). cd ..
-4). g++ perpleCXXMain.cpp -o perpleCXXMain.xo -Iinclude -lperplex_cpp -Lperplex-stable
-5). export LD_LIBRARY_PATH=<path to>/PerpleCXX/StandAloneWithFtnLib/perplex-stable:$LD_LIBRARY_PATH
-6). ./perpleCXXMain.xo pyrolite
+1). cd perplex-stable
+2). cmake ../
+3). make -f Makefile
+4). cd ..
+5). g++ perpleCXXMain.cpp -o perpleCXXMain.xo -Iinclude -lperplex_cpp -Lperplex-stable
+6). export LD_LIBRARY_PATH=<path to>/PerpleCXX/StandAloneWithFtnLib/perplex-stable:$LD_LIBRARY_PATH
+7). ./perpleCXXMain.xo pyrolite
