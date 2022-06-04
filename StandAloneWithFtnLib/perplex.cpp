@@ -245,7 +245,7 @@ int phaseq(double P, double T, int ncomp, double *comp, int *nphases,
    * (*) = molar property
    * 
    */
-  //fprintf(stdout,"phaseq: START START START.\n");
+  fprintf(stdout,"phaseq: START START START.\n");
 
   cst4_.iam = 2;	/* we fake us as being Perple_X program MEEMUM.
 	                 * TODO: create new value for this wrapper in
@@ -313,30 +313,44 @@ int phaseq(double P, double T, int ncomp, double *comp, int *nphases,
     {
       cst300_.cblk[i] = 0.0;
     }
-  
 
+  
   /* Convert wt% in cblk to molar% and normalize to one 
    * in cst313_.b[]
    */
   for (i = 0; i < cst6_.icp; i++)
     {
+      //fprintf(stderr,"phaseq: bef. conv cst300_.cblk[i] =%lf\n",cst300_.cblk[i]);
+      //fprintf(stderr,"phaseq: cst45_.atwt[i]=%lf\n",cst45_.atwt[i]);
       cst300_.cblk[i] = cst300_.cblk[i] / cst45_.atwt[i];
+      //fprintf(stderr,"phaseq: aft. conv cst300_.cblk[i] =%lf\n",cst300_.cblk[i]);	      
     }	
   sum = 0.0;
   for (i = 0; i < cst6_.icp; i++)
     {
       sum += cst300_.cblk[i];
     }
+
+  //fprintf(stderr,"phaseq: sum=%lf\n",sum);
+  
   for (i = 0; i < cst6_.icp; i++)
     {
       double val;
       val = cst300_.cblk[i] / sum;
+
+      //fprintf(stderr,"phaseq: val=%lf\n",val);
+      //fprintf(stderr,"phaseq: bef. norm. cst313_.b[i] =%lf\n",cst313_.b[i]);
       if (cst313_.b[i] != val)
 	{
 	  cst313_.b[i] = val;
 	  same_comp = 0;
         }
+      //fprintf(stderr,"phaseq: aft. norm. cst313_.b[i] =%lf\n",cst313_.b[i]);
     }
+
+  //fprintf(stdout,"\nphaseq: aft. norm. : exit 0\n");
+  //exit(0);  
+  
   for ( ; i < p_k5; i++)
     {
       cst313_.b[i] = 0.0;
@@ -359,6 +373,8 @@ int phaseq(double P, double T, int ncomp, double *comp, int *nphases,
 	}
       fprintf(stderr, "\n");
     }
+
+  fprintf(stderr,"phaseq: same_comp=%d\n",same_comp);
 	
   /* Perple_X phase eq optimization routine */
 #ifdef USE_LPOPT_WARM_START
@@ -458,9 +474,7 @@ int phaseq(double P, double T, int ncomp, double *comp, int *nphases,
 	  fprintf(stderr, "\n");
 	}
     }
-  
-
-  
+    
   if (dbgprint)
     {
       for (i = 0; i < cst24_.ipot; i++)
@@ -515,8 +529,8 @@ int phaseq(double P, double T, int ncomp, double *comp, int *nphases,
   /* Next time we can do warm start */
   lpopt_warmstart = 1;
   
-  //fprintf(stdout,"phaseq: end: perpleX thermo. crunch\n");
-  //fprintf(stdout,"phaseq: exit 0\n");
+  fprintf(stdout,"phaseq: end: perpleX thermo. crunch\n");
+  fprintf(stdout,"phaseq: exit 0\n");
   //exit(0);
   return 0;
 }

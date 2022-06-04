@@ -13,9 +13,12 @@ extern "C" {
 //---
 int main(int argc, char* argv[] ) {
 
+   int nphases= 0;
+   int phaseq_dbg = 0;
+   
    std::vector<double> wtphases(p_size_phases);
-   std::vector<double> cphases(p_size_phases * p_size_components);
-   std::vector<char> namephases(p_size_phases * p_pname_len);
+   std::vector<double> cphases(p_size_phases* p_size_components);
+   std::vector<char> namephases(p_size_phases* p_pname_len);
    std::vector<double> sysprop(p_size_sysprops);
   
    const int nbArgc= 2;
@@ -37,7 +40,18 @@ int main(int argc, char* argv[] ) {
      
    std::cout << whoAmI << ": nbComponents=" << nbComponents << std::endl;
 
+   double sim_pressure= 1e9;
+   double sim_temperature= 1650.0;
+
+   //--- g/g ??
+   std::vector<double> weightPrcts{0.44, 0.04, 0.08, 0.44 };
+   
    // --- read P,T parameters and components wght amounts fron another input text file?
+
+   phaseq(sim_pressure/1.e5, sim_temperature,
+          nbComponents, weightPrcts.data(), &nphases, wtphases.data(), cphases.data(),
+          sysprop.data(), namephases.data(), 1); //, phaseq_dbg);
+   
    //phaseq(average_pressure/1.e5, average_temperature,
    //       nbComponents, comp.data(), &nphases, wtphases.data(), cphases.data(),
    //       sysprop.data(), namephases.data(), phaseq_dbg);
