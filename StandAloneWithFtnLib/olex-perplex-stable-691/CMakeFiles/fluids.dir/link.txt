@@ -1,1 +1,0 @@
-/usr/bin/f95    -fPIC CMakeFiles/fluids.dir/fluids.f.o  -o fluids  libperplex.a 

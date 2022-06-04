@@ -1,1 +1,0 @@
-/usr/bin/f95    -fPIC CMakeFiles/pt2curv.dir/pt2curv.f.o  -o pt2curv  libperplex.a 

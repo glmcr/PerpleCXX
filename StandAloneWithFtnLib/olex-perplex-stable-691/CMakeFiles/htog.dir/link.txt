@@ -1,1 +1,0 @@
-/usr/bin/f95    -fPIC CMakeFiles/htog.dir/htog.f.o  -o htog  libperplex.a 
