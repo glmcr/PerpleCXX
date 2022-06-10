@@ -1,0 +1,344 @@
+---
+#
+# --- Holland & Powell, JMG 2011 (TC-DS61)
+#
+standardVariables:
+   pressure:
+      units: bar
+      tolerance: 0.1E-3
+      referenceValue: 1.00
+   temperature:
+      units: kelvin
+      tolerance: 0.1E-4
+      referenceValue: 298.15
+   CO2Fraction:
+      units: none
+      tolerance: 0.1E-6
+      referenceValue: 0.0
+   C1ChemPotential:
+      units: joule
+      tolerance: 0.1E-2
+      referenceValue: 0.0
+   C2ChemPotential:
+      units: joule
+      tolerance: 0.1E-2
+      referenceValue: 0.0
+# --- DTOL for unconstrained minimization, energy units
+unconstrainedMinimizationTolerance:
+   units: joule
+   value: -0.1E-2
+# ---
+components:
+   NA2O: 61.9790
+   MGO: 40.3040
+   AL2O3: 101.9610
+   SIO2: 60.0840
+   K2O: 94.1960
+   CAO: 56.0770
+   TIO2: 79.8660
+   MNO: 70.9370
+   FEO: 71.8440
+   NIO: 74.6930
+   ZRO2: 123.2200
+   CL2: 70.9060
+   O2: 31.9990
+   H2O: 18.0150
+   CO2: 44.0100
+   CUO: 79.5450
+   CR2O3: 151.9900
+   # --- S2: Corrected 9/21/2018, Jilei Li. This value is
+   #     twice g-formula wt of monatomic sulfur.
+   #     Formerly the monatomic molar wt was used with
+   #     the diatomic formula.
+   S2: 64.1300
+   F2: 37.9968
+# ---
+specialComponents:
+   - H2O
+   - CO2
+# ---
+makes:
+   ferroBrucite:
+      abbreviation: fbr
+      make:
+         # ---
+         brucite: 1.0
+         talc: -1.0/3.0
+         ferroTalc: 1.0/3.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   ferroClinoHumite:
+      abbreviation: fchum
+      make:
+         # --- fchum = 1 chum - 3 ta + 3 fta
+         clinoHumite: 1.0
+         talc: -3.0
+         ferroTalc: 3.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   ferroPhaseA:
+      abbreviation: fpha
+      make:
+         # --- fphA = 1 phA - 7/3 ta + 7/3 fta
+         phaseA: 1.0
+         talc: -7.0/3.0
+         ferroTalc: -7.0/3.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   ferroAntigorite:
+      abbreviation: fatg
+      make:
+         # --- fatg = 1 atg - 16 ta + 16 fta
+         antigorite: 1.0
+         talc: -16.0
+         ferroTalc: 16.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   tschermakoAntigorite:
+      abbreviation: atgts
+      make:
+         # --- atgts = 4 clin + 9/17 atg - 24/17 br
+         clinochlore: 4.0
+         antigorite: 9.0/17.0
+         brucite: 24.0.17.0
+      DQF:
+         units: joule/mole
+         # --- DQF = -2e3 + 46.1*T_K
+         coefficients:
+            constant: -2e3
+            temperature: 46.1
+            pressure: 0.0
+   acmiteDQF:
+      # --- Green et al (2007) omphacite model, ds6
+      abbreviation: acm_dqf
+      make:
+         # ---acm_dqf = 1 acm
+         acmite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: -7000.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioRiebekite:
+      # --- Diener et al. (JMG, 2007) clinoamphibole model
+      #     magnesio riebekite, ds6, 3/7/18 JADC
+      abbreviation: mrb
+      make:
+         # --- mrb = 1 gl - 2 jd +2 acm
+         glaucophane: 1.0
+         jadeite: 2.0
+         acmite: 2.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   tschermakiteDQF:
+      abbreviation: ts_dqf
+      make:
+         # --- ts_dqf = 1 ts
+         tschermakite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 10000.0
+            temperature: 0.0
+            pressure: 0.0
+   cummingtoniteDQF:
+      # --- ds6, 3/7/18 JADC
+      abbreviation: cumm_dqf
+      make:
+         # --- cumm_dqf = 1 cumm
+         cummingtonite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   gruneriteDQF:
+      # --- ds6, 3/7/18 JADC
+      abbreviation: grun_dqf
+      make:
+         # --- grun_dqf = 1 grun
+         grunerite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: -3000.0
+            temperature: 0.0
+            pressure: 0.0
+   orthoGlaucophaneDQF:
+      # --- revised (Diener et al, JMG 2011 25:631-656)
+      #     ortho-amphibole model. Oct 31, 2011.
+      abbreviation: ogl_dqf
+      make:
+         # --- ogl_dqf = 1 gl
+         glaucophane: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 15000.0
+            temperature: 0.0
+            pressure: 0.0
+   ferroAnthophylliteDQF:
+      # --- revised (Diener et al, JMG 2011 25:631-656)
+      #     ortho-amphibole model. Oct 31, 2011.
+      abbreviation: fanth_dqf
+      make:
+         # --- fanth_dqf = 1 fanth
+         ferroAnthophyllite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 7000.0
+            temperature: 0.0
+            pressure: 0.0
+   orthoMagnesioRiebekite:
+      # --- ortho-magnesio riebekite (mrb dqf + 25000 J/mol),
+      #     stoichiometry corrected 3/30/08 JADC
+      abbreviation: omrb_dqf
+      make:
+         # --- omrb= 1 gl -2 jd +2 acm
+         glaucophane: 1.0
+         jadeite: -2.0
+         acmite: 2.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 33000.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioPargasite:
+      # --- Not sure but seems consistent
+      #     with other magnesio<Something> minerals
+      #     because of the make formula containing
+      #     parg but the the abbreviation should
+      #     be mparg and not mpa
+      abbreviation: mpa
+      make:
+         # --- mpa = 1 parg - 1 tr +1 anth
+         pargasite: 1.0
+         tremolite: 1.0
+         anthophyllite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 25000.0
+            temperature: 0.0
+            pressure: 0.0
+   gedriteDQF:
+      abbreviation: ged_dqf
+      make:
+         # --- ged_dqf = 1 ged
+         gedrite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 20000.0
+            temperature: 0.0
+            pressure: 0.0
+   scapolite:
+      # --- make definition for coma(?) of the
+      #     unpublished thermocalc scapolite model
+      abbreviation: coma
+      make:
+         # --- coma = 3 ab + 1 cc
+         albite: 3.0
+         calcite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 25000.0
+            temperature: 0.0
+            pressure: 0.0
+   ferroTitanoBiotite:
+      # --- Ti-Fe3+ Biotite after Tajcmanova et al. (2009)
+      abbreviation: tbit
+      make:
+         # --- tbit = 1 phl - 1 br + 1 ru
+         phlogopite: 1.0
+         brucite: 1.0
+         rutile: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 84000.0
+            temperature: -11.5
+            pressure: 0.0
+   ferroMagnesioBiotite:
+      # --- Listed as(???):
+      #     Ti-Fe3+ Biotite after Tajcmanova et al. (2009)
+      #     in the hp11ver.dat file of Perple_X 6.9.1
+      abbreviation: fbit
+      make:
+         # --- fbit = 1 east - 1/2 cor + 1/2 hem
+         eastonite: 1.0
+         corindon: -1.0/2.0
+         hematite: 1.0/2.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 6000.0
+            temperature: 0.0
+            pressure: 0.0
+   # --- Make definitions for the Smye et al (JMG, 2011, 28:753-768)
+   #     models for Mica, Carpholite and Chloritoid(?)
+   orthoCarpholite:
+      # --- not sure but seems consistent
+      #     with the other names
+      abbreviation: ocar
+      make:
+         # --- ocar = 1 fcar + 1/2 hem - 1/2 cor
+         ferroCarpholite: 1.0
+         hematite: -1.0/2.0
+         corindon: 1.0/2.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 45000.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioManganoCarpholite:
+      # --- corrected from 1 mcar + 1 mang - 1/2 cor, G Hoschek, 10/24/11.
+      abbreviation: mncar
+      make:
+         # --- mncar = 1 mcar + 1 mang - 1 per
+         magnesioCarpholite: 1.0
+         manganosite: 1.0
+         periclase: -1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 30000.0
+            temperature: 0.0
+            pressure: 0.0
+   margariteDQF:
+      abbreviation: ma_dqf
+      make:
+         # --- ma_dqf = 1 ma
+         margarite: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: 3000.0
+            temperature: 0.0
+            pressure: 0.0
