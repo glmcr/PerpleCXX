@@ -1,0 +1,26 @@
+---
+standardVariables:
+   pressure:
+      units: bar
+      tolerance: 0.1E-3
+      referenceValue: 1.00
+   temperature:
+      units: kelvin
+      tolerance: 0.1E-4
+      referenceValue: 298.15
+   CO2Fraction:
+      units: none
+      tolerance: 0.1E-6
+      referenceValue: 0.0
+   C1ChemPotential:
+      units: joule
+      tolerance: 0.1E-2
+      referenceValue: 0.0
+   C2ChemPotential:
+      units: joule
+      tolerance: 0.1E-2
+      referenceValue: 0.0
+# --- DTOL for unconstrained minimization, energy units
+unconstrainedMinimizationTolerance:
+   units: joule
+   value: -0.1E-2

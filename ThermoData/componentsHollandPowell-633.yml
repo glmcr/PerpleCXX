@@ -1,0 +1,74 @@
+---
+# --- Created using hp633ver.dat of Perple_X.
+#     2022-06-12
+components:
+   # --- molarWeight units [g/mole]
+   #     elementalEntropy units [joule/(kelvin*mole)]
+   Na2O:
+      molarWeight: 61.9790
+      elementalEntropy: 205.1750
+   MgO:
+      molarWeight: 40.3040
+      elementalEntropy: 135.2550
+   Al2O3:
+      molarWeight: 101.9610
+      elementalEntropy: 364.4250
+   SiO2:
+      molarWeight: 60.0840
+      elementalEntropy: 223.9600
+   K2O:
+      molarWeight: 94.1960
+      elementalEntropy: 231.9350
+   CaO:
+      molarWeight: 56.0770
+      elementalEntropy: 144.2050
+   TiO2:
+      molarWeight: 79.8660
+      elementalEntropy: 235.8700
+   MnO:
+      molarWeight: 70.9370
+      elementalEntropy: 134.7950
+   FeO:
+      molarWeight: 71.8440
+      elementalEntropy: 129.8550
+   NiO:
+      molarWeight: 74.6930
+      elementalEntropy: 132.3750
+   ZrO2:
+      molarWeight: 123.2200
+      elementalEntropy: 244.3300
+   Cl2:
+      molarWeight: 70.9060
+      elementalEntropy: 223.0800
+   O2:
+      molarWeight: 31.9990
+      elementalEntropy: 205.1500
+   H2O:
+      molarWeight: 18.0150
+      elementalEntropy: 233.2550
+   CO2:
+      molarWeight: 44.0100
+      elementalEntropy: 210.8900
+   CuO:
+      molarWeight: 79.5450
+      elementalEntropy: 210.8900
+   Cr2O3:
+      molarWeight: 151.9900
+      elementalEntropy: 358.8110
+   # --- S2: Corrected 9/21/2018, Jilei Li. This value is
+   #     twice g-formula wt of monatomic sulfur.
+   #     Formerly the monatomic molar wt was used with
+   #     the diatomic formula.
+   S2:
+      molarWeight: 64.1300
+      elementalEntropy: 64.1000
+   F2:
+      molarWeight: 37.9968
+      elementalEntropy: 202.7900
+   N2:
+      molarWeight: 28.0130
+      elementalEntropy: 191.610
+# ---
+specialComponents:
+   - H2O
+   - CO2

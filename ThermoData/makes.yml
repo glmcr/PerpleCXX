@@ -1,62 +1,9 @@
 ---
 #
-# --- Holland & Powell, JMG 2011 (TC-DS61)
-#
-standardVariables:
-   pressure:
-      units: bar
-      tolerance: 0.1E-3
-      referenceValue: 1.00
-   temperature:
-      units: kelvin
-      tolerance: 0.1E-4
-      referenceValue: 298.15
-   CO2Fraction:
-      units: none
-      tolerance: 0.1E-6
-      referenceValue: 0.0
-   C1ChemPotential:
-      units: joule
-      tolerance: 0.1E-2
-      referenceValue: 0.0
-   C2ChemPotential:
-      units: joule
-      tolerance: 0.1E-2
-      referenceValue: 0.0
-# --- DTOL for unconstrained minimization, energy units
-unconstrainedMinimizationTolerance:
-   units: joule
-   value: -0.1E-2
-# ---
-components:
-   NA2O: 61.9790
-   MGO: 40.3040
-   AL2O3: 101.9610
-   SIO2: 60.0840
-   K2O: 94.1960
-   CAO: 56.0770
-   TIO2: 79.8660
-   MNO: 70.9370
-   FEO: 71.8440
-   NIO: 74.6930
-   ZRO2: 123.2200
-   CL2: 70.9060
-   O2: 31.9990
-   H2O: 18.0150
-   CO2: 44.0100
-   CUO: 79.5450
-   CR2O3: 151.9900
-   # --- S2: Corrected 9/21/2018, Jilei Li. This value is
-   #     twice g-formula wt of monatomic sulfur.
-   #     Formerly the monatomic molar wt was used with
-   #     the diatomic formula.
-   S2: 64.1300
-   F2: 37.9968
-# ---
-specialComponents:
-   - H2O
-   - CO2
-# ---
+# --- All makes defined in just one YAML
+#     file instead of being hardcoded with
+#     the same values in many files.
+#     (*** Which is very error-prone !!!)
 makes:
    ferroBrucite:
       abbreviation: fbr
@@ -348,9 +295,9 @@ makes:
       abbreviation: kho
       make:
          # --- kho = 1 py - 1 gr + 1 andr
-         pyrope: 1.0	 
+         pyrope: 1.0
          grossular: -1.0
-         andradite 1.0
+         andradite: 1.0
       DQF:
          units: joule/mole
          coefficients:
@@ -363,13 +310,13 @@ makes:
       #     Corrected coeffiecients for TC un-landau,
       #     formerly, the TC DQF was used without
       #     modification. NOTE: the ilm and ilm_nol
-      #     endmembers must be excluded from calculations 
+      #     endmembers must be excluded from calculations
       #     with the Ilm(WPH) model and the ilm_nol,
-      #     oilm and dilm must be excluded from calculations 
+      #     oilm and dilm must be excluded from calculations
       #     without the Ilm(WPH) model. JADC, 6/19/11.
       #
-      #     1993  -2.1 0 => the TC DQF coeffecients, the values below are
-      #     oilm + {DH,R*ln(4),0} 
+      #     1993  -2.1 0 => the TC DQF coeffecients, the
+      #     values below are oilm + {DH,R*ln(4),0}
       #
       # --- GM note: Not sure what is the meaning of the
       #     "d" in the dilm abbrev used by JADC
@@ -386,8 +333,9 @@ makes:
             pressure: 0.1836386612e-1
    orthoIlmenite:
       # --- -13608 9.426 0 => the TC DQF coeffecients added to
-      #      smax*tc0*(q0^2-1/3*q0^6), -smax*q0^2, vmax*q0^2, respectively, yields
-      #      the un-landaued DQF coefficients for Perple_X
+      #      smax*tc0*(q0^2-1/3*q0^6), -smax*q0^2, vmax*q0^2,
+      #      respectively, yields the un-landaued DQF
+      #      coefficients for Perple_X
       abbreviation: oilm
       make:
          # --- oilm = 1 ilm_nol
@@ -400,7 +348,8 @@ makes:
             temperature: -1.59231967
             pressure: 0.1836386612e-1
    zirconMeltEndMember:
-      # --- Make definitions for Kelsey & Powell (JMG, 2011) Zr melting relations. JADC, 2/6/12
+      # --- Make definitions for Kelsey & Powell (JMG, 2011)
+      #     Zr melting relations. JADC, 2/6/12
       abbreviation: zr8L
       make:
          # --- zr8L = 2 zrc
@@ -472,9 +421,9 @@ makes:
       abbreviation: kho1
       make:
          # --- khol = 1 py - 1 gr + 1 andr
-         pyrope: 1.0	 
+         pyrope: 1.0
          grossular: -1.0
-         andradite 1.0
+         andradite: 1.0
       DQF:
          # --- DQF(J/mol) = 27d3
          units: joule/mole
@@ -551,7 +500,7 @@ makes:
          # --- ma1_dqf = 1 ma
          margarite: 1.0
       DQF:
-         # --- DQF(J/mol) = 6.5d3 
+         # --- DQF(J/mol) = 6.5d3
          units: joule/mole
          coefficients:
             constant: 6500.0
@@ -588,7 +537,7 @@ makes:
    titanoMagnesioStaurolite:
       abbreviation: mstt
       make:
-         # --- mstt   = 1 mst - 1 cor   +3/2   ru 
+         # --- mstt   = 1 mst - 1 cor   +3/2 ru
          magnesioStaurolite: 1.0
          corundum: -1.0
          rutile: 3.0/2.0
@@ -628,7 +577,7 @@ makes:
             temperature: 0.0
             pressure: 0.0
    ferroBiotiteEndMember:
-      # --- Fe3+ 
+      # --- Fe3+
       abbreviation: fbi
       make:
          # --- fbi = 1 east - 1/2 gr + 1/2 andr
@@ -643,17 +592,17 @@ makes:
             temperature: 0.0
             pressure: 0.0
    ferroMagnesioSaphirrine:
-       # --- Fe3+
-       abbreviation: ospr
-       make:
-          # --- ospr = 1/2 andr - 1/2 gr + 1 spr5
-          # GM Note: spr5 would be saphirrine5
-          # but it is not in the phases list part
-          # of hp11ver.dat BUT it is at least listed
-          # in the thermo parameters section.
-          andradite: 1.0/2.0
-          grossular: -1.0/2.0
-          saphirrine5: 1.0
+      # --- Fe3+
+      abbreviation: ospr
+      make:
+         # --- ospr = 1/2 andr - 1/2 gr + 1 spr5
+         # GM Note: spr5 would be saphirrine5
+         # but it is not in the phases list part
+         # of hp11ver.dat BUT it is at least listed
+         # in the thermo parameters section.
+         andradite: 1.0/2.0
+         grossular: -1.0/2.0
+         saphirrine5: 1.0
       DQF:
          # --- DQF(J/mol) = -16d3
          units: joule/mole
@@ -662,11 +611,11 @@ makes:
             temperature: 0.0
             pressure: 0.0
    pyroxmangiteTwo:
-       # --- Mn endmember for Opx(W) model
-       abbreviation: mnopx
-       make:
-          # --- mnopx = 2 pxmn
-          pyroxmangite: 2.0
+      # --- Mn endmember for Opx(W) model
+      abbreviation: mnopx
+      make:
+         # --- mnopx = 2 pxmn
+         pyroxmangite: 2.0
       DQF:
          # --- DQF(J/mol) = 6680
          units: joule/mole
@@ -675,7 +624,7 @@ makes:
             temperature: 0.0
             pressure: 0.0
    ferrosiliteCpxEndMemberJH:
-      # --- 
+      # ---
       abbreviation: cfs
       make:
          # --- cfs = 1 fs
@@ -702,13 +651,13 @@ makes:
             constant: -3000.0
             temperature: 0.0
             pressure: 0.0
-    calcoEsseneiteCpxEndMemberJH:
-       abbreviation: cess
-       make:
-          # --- cess = 1 cats + 1 acm - 1 jd
-          calcoTschermakite: 1.0
-          acmite: 1.0
-          jadeite: -1.0
+   calcoEsseneiteCpxEndMemberJH:
+      abbreviation: cess
+      make:
+         # --- cess = 1 cats + 1 acm - 1 jd
+         calcoTschermakite: 1.0
+         acmite: 1.0
+         jadeite: -1.0
       DQF:
          # --- DQF(J/mol) = -6d3
          units: joule/mole
@@ -716,13 +665,13 @@ makes:
             constant: -6000.0
             temperature: 0.0
             pressure: 0.0
-    magnesioEnstatiteCpxEndMemberJH
-       # --- jh suffix means that it's from
-       #     Jennings and Holland, J Pet, 56:869-892, 2015
-       abbreviation: cenjh
-       make:
-          # --- cenjh = 1 en
-          enstatite: 1.0
+   magnesioEnstatiteCpxEndMemberJH:
+      # --- jh suffix means that it's from
+      #     Jennings and Holland, J Pet, 56:869-892, 2015
+      abbreviation: cenjh
+      make:
+         # --- cenjh = 1 en
+         enstatite: 1.0
       DQF:
          # --- DQF(J/mol) = 3.5d3 - 2 * T_K  + 0.048 * p_bar
          units: joule/mole
@@ -765,7 +714,7 @@ makes:
    ferroDiopsideCpxEndMemberJADC:
       # --- Is it the same as the cfm end-member
       #     as in Jennings and Holland, J Pet, 56:869-892,
-      # 
+      #
       abbreviation: odi
       make:
          # --- odi = 1 di
@@ -821,10 +770,33 @@ makes:
          anorthiteLiquid: 1.0
          silicaLiquid: -1.0
       DQF:
-         # --- DQF(J/mol) = 2.5d3   + 0.29 * p_bar 
+         # --- DQF(J/mol) = 2.5d3   + 0.29 * p_bar
          units: joule/mole
          coefficients:
             constant: 2500.0
             temperature: 0.0
             pressure: 0.29
-   
+   forsteriteLiquidJH:
+      abbreviation: fojL
+      make:
+         # --- fojL= = 1 foL
+         forsteriteLiquid: 1.0
+      DQF:
+         # --- DQF(J/mol) = 2d3     - 0.03 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: 2000.0
+            temperature: 0.0
+            pressure: 0.03
+   fayaliteLiquidJH:
+      abbreviation: fajL
+      make:
+         # --- fajL= = 1 faL
+         fayaliteLiquid: 1.0
+      DQF:
+         # --- DQF(J/mol) = -2.5d3  + 0.18 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: -2500.0
+            temperature: 0.0
+            pressure: 0.18
