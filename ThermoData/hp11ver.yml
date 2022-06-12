@@ -518,11 +518,11 @@ makes:
             constant: -9000.0
             temperature: 0.0
             pressure: -1.3
-   quartzMeltEndMember:
+   silicaLiquidEndMember:
       abbreviation: q8L
       make:
          # --- q8L = 4 qL
-         quartzLiquid: 4.0
+         silicaLiquid: 4.0
       DQF:
          # --- a small DQF is added to stabilize q8L relative to q
          #     DQF(J/mol) = -20
@@ -674,7 +674,7 @@ makes:
             constant: 6680
             temperature: 0.0
             pressure: 0.0
-   ferrosiliteEndMember:
+   ferrosiliteCpxEndMemberJH:
       # --- 
       abbreviation: cfs
       make:
@@ -687,7 +687,7 @@ makes:
             constant: 3800.0
             temperature: -3.0
             pressure: 0.03
-   chromicDiopsideEndMember:
+   chromicDiopsideCpxEndMemberJH:
       abbreviation: crdi
       make:
          # --- crdi = 1 cats + 1 kos - 1 jd
@@ -702,3 +702,129 @@ makes:
             constant: -3000.0
             temperature: 0.0
             pressure: 0.0
+    calcoEsseneiteCpxEndMemberJH:
+       abbreviation: cess
+       make:
+          # --- cess = 1 cats + 1 acm - 1 jd
+          calcoTschermakite: 1.0
+          acmite: 1.0
+          jadeite: -1.0
+      DQF:
+         # --- DQF(J/mol) = -6d3
+         units: joule/mole
+         coefficients:
+            constant: -6000.0
+            temperature: 0.0
+            pressure: 0.0
+    magnesioEnstatiteCpxEndMemberJH
+       # --- jh suffix means that it's from
+       #     Jennings and Holland, J Pet, 56:869-892, 2015
+       abbreviation: cenjh
+       make:
+          # --- cenjh = 1 en
+          enstatite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 3.5d3 - 2 * T_K  + 0.048 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: 3500.0
+            temperature: 2.0
+            pressure: 0.048
+   chromicEnstatiteCpxEndMemberJH:
+      abbreviation: cren
+      make:
+         # --- cren = 1 mgts + 1 kos - 1 jd
+         #     kos -> kosmochlor: found on wikipedia
+         magnesioTschermakite: 1.0
+         kosmochlor: 1.0
+         jadeite: -1.0
+      DQF:
+         # --- DQF(J/mol) = 3d3
+         units: joule/mole
+         coefficients:
+            constant: 3000.0
+            temperature: 0.0
+            pressure: 0.0
+   ferroEnstatiteCpxEndMemberJADC:
+      # --- Is it the same as the cfm end-member
+      #     as in Jennings and Holland, J Pet, 56:869-892,
+      #     2015 ???
+      abbreviation: oen
+      make:
+         # --- oen = 1 mgts + 1 acm - 1 jd
+         magnesioTschermakite: 1.0
+         acmite: 1.0
+         jadeite: -1.0
+      DQF:
+         # --- DQF(J/mol) = -15d3 + 0.15 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: -15000.0
+            temperature: 0.0
+            pressure: 0.15
+   ferroDiopsideCpxEndMemberJADC:
+      # --- Is it the same as the cfm end-member
+      #     as in Jennings and Holland, J Pet, 56:869-892,
+      # 
+      abbreviation: odi
+      make:
+         # --- odi = 1 di
+         diopside: 1.0
+      DQF:
+         # --- DQF(J/mol) = -0.1d3 0.211 0.005
+         units: joule/mole
+         coefficients:
+            constant: -100.0
+            temperature: 0.211
+            pressure: 0.005
+   silicaLiquidJH:
+      abbreviation: qjL
+      make:
+         # --- qjL = 2 qL
+         silicaLiquid: 2.0
+      DQF:
+         # --- DQF(J/mol) = 4d3     - 0.43 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: 4000.0
+            temperature: 0.0
+            pressure: 0.43
+   diopsideLiquidJH:
+      abbreviation: dijL
+      make:
+         # --- dijL = 1 diL
+         diopsideLiquid: 1.0
+      DQF:
+         # --- DQF(J/mol) = -6.7d3  + 0.17 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: -6700.0
+            temperature: 0.0
+            pressure: 0.17
+   jadeiteLiquidJH:
+      abbreviation: jdjL
+      make:
+         # --- jdjL = = 1 abL - 1 qL
+         albiteLiquid: 1.0
+         silicaLiquid: -1.0
+      DQF:
+         # --- DQF(J/mol) = 18.7d3  - 0.16 * p_bar
+         units: joule/mole
+         coefficients:
+            constant: -18700.0
+            temperature: 0.0
+            pressure: 0.16
+   calcoTschermakiteLiquidJH:
+      abbreviation: ctjL
+      make:
+         # --- ctjL= 1 anL - 1 qL
+         anorthiteLiquid: 1.0
+         silicaLiquid: -1.0
+      DQF:
+         # --- DQF(J/mol) = 2.5d3   + 0.29 * p_bar 
+         units: joule/mole
+         coefficients:
+            constant: 2500.0
+            temperature: 0.0
+            pressure: 0.29
+   
