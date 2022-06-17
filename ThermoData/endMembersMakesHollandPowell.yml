@@ -143,7 +143,7 @@ makes:
          coefficients:
             constant: -3000.0
             temperature: 0.0
-            pressure: 0.0         
+            pressure: 0.0
    orthoGlaucophaneDQF:
       # --- revised (Diener et al, JMG 2011 25:631-656)
       #     ortho-amphibole model. Oct 31, 2011.
@@ -913,7 +913,7 @@ makes:
             constant: 95000
             temperature: 0.0
             pressure: 0.0
-   ferrosiliteCpxEndMemberG
+   ferrosiliteCpxEndMemberG:
       abbreviation: cfsg
       make:
          # --- cfsg = 1 fs
@@ -1020,16 +1020,16 @@ makes:
          coefficients:
             constant: 25000.0
             temperature: 0.0
-            pressure: 0.0 
+            pressure: 0.0
    ferroSilicoCorundum:
       abbreviation: fcor
       make:
-         # --- fcor = 1 mcor + 1 fak - 1 mak 
+         # --- fcor = 1 mcor + 1 fak - 1 mak
          magnesioSilicoCorundum: 1.0
          ferroAkimoitoite: 1.0
          magnesioAkimoitoite: -1.0
       DQF:
-         # --- DQF(J/mol) = -15d3 
+         # --- DQF(J/mol) = -15d3
          units: joule/mole
          coefficients:
             constant: -15000.0
@@ -1038,14 +1038,90 @@ makes:
    highPressureMagnesioTschermakite:
       abbreviation: hmgts
       make:
-         # --- hmgts  = 1 mgts + 1 hen - 1 en 
+         # --- hmgts  = 1 mgts + 1 hen - 1 en
          magnesioTschermakite: 1.0
          highPressureEnstatite: 1.0
          enstatite: -1.0
       DQF:
-         # --- DQF(J/mol) = -1d3 
+         # --- DQF(J/mol) = -1d3
          units: joule/mole
          coefficients:
             constant: -1000.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioTitanoGarnet:
+      abbreviation: tig
+      make:
+         # --- tig = 1 py + 1/2 per + 1/2 ru - 1/2 cor
+         pyrope: 1.0
+         periclase: 1.0/2.0
+         rutile: 1.0/2.0
+         corundum: -1.0/2.0
+      DQF:
+         # --- DQF(J/mol) = 46.7d3  - 17.3 * T
+         units: joule/mole
+         coefficients:
+            constant: 46700.0
+            temperature: -17.3
+            pressure: 0.0
+   inverseSpinel:
+      #     Formula: Al(Mg,Al)04
+      #     the Mg2+ And one of the
+      #     Al3+ have exchanged positions
+      #     in the cristal.
+      abbreviation: isp
+      make:
+         # --- isp = 1 nsp
+         normalSpinel: 1.0
+      DQF:
+         # --- DQF(J/mol) = 23.6d3  - 5.76303 * T
+         units: joule/mole
+         coefficients:
+            constant: 23600.0
+            temperature: -5.76303
+            pressure: 0.0
+   inverseHercynite:
+      #     Formula: Al(Fe,Al)04
+      #     the Fe2+ And one of the
+      #     Al3+ have exchanged positions
+      #     in the cristal.
+      abbreviation: iherc
+      make:
+         # --- iherc = 1 nherc
+         normalHercynite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 23.6d3  - 5.76303 * T
+         #     NOTE: Exact same DQF as for inverseSpinel???
+         units: joule/mole
+         coefficients:
+            constant: 23600.0
+            temperature: -5.76303
+            pressure: 0.0
+   inverseMagnetite:
+      abbreviation: imt
+      make:
+         # --- imt   = 1 mt
+         #     NOTE: JADC seems to use mt instead
+         #     of nmt as for nsp for spinel
+         normalHercynite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 300
+         units: joule/mole
+         coefficients:
+            constant: 300.0
+            temperature: 0.0
+            pressure: 0.0
+   calcoEsseneiteCpxEndMemberHGP:
+      abbreviation: cessh
+      make:
+         # --- cessh = 1 cats + 1 acm - 1 jd
+         calcoTschermakite: 1.0
+         acmite: 1.0
+         jadeite: -1.0
+      DQF:
+         # --- DQF(J/mol) = -3450
+         units: joule/mole
+         coefficients:
+            constant: -3450.0
             temperature: 0.0
             pressure: 0.0
