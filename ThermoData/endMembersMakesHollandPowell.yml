@@ -133,6 +133,17 @@ makes:
             constant: -3000.0
             temperature: 0.0
             pressure: 0.0
+   glaucophaneDQF:
+      abbreviation: gl_dqf
+      make:
+         # --- gl_dqf = 1 gl
+         glaucophane: 1.0
+      DQF:
+         units: joule/mole
+         coefficients:
+            constant: -3000.0
+            temperature: 0.0
+            pressure: 0.0         
    orthoGlaucophaneDQF:
       # --- revised (Diener et al, JMG 2011 25:631-656)
       #     ortho-amphibole model. Oct 31, 2011.
@@ -813,9 +824,9 @@ makes:
             temperature: 0.0
             pressure: 0.18
    hematiteLiquidJH:
-      abbreviation: hmjL= 0.5 hemL
+      abbreviation: hmjL
       make:
-         # ---
+         # --- hmjL= 0.5 hemL
          hematiteLiquid: 1.0/2.0
       DQF:
          # --- DQF(J/mol) = :0   +  0.20 * p_bar
@@ -825,9 +836,9 @@ makes:
             temperature: 0.0
             pressure: 0.2
    eskolaiteLiquidJH:
-      abbreviation: ekjL= 0.5 eskL
+      abbreviation: ekjL
       make:
-         # ---
+         # --- ekjL= 0.5 eskL
          eskolaiteLiquid: 1.0/2.0
       DQF:
          # --- DQF(J/mol) =  21d3
@@ -837,9 +848,9 @@ makes:
             temperature: 0.0
             pressure: 0.0
    forsteriteTonaliteLiquid:
-      abbreviation: foTL= 2 foL
+      abbreviation: foTL
       make:
-         # ---
+         # --- foTL= 2 foL
          forsteriteLiquid: 2.0
       DQF:
          # --- DQF(J/mol) = -4d3
@@ -849,9 +860,9 @@ makes:
             temperature: 0.0
             pressure: 0.0
    fayaliteTonaliteLiquid:
-      abbreviation: faTL= 2 faL
+      abbreviation: faTL
       make:
-         # ---
+         # --- faTL= 2 faL
          fayaliteLiquid: 2.0
       DQF:
          # --- DQF(J/mol) = -8.2d3  - 1.4 * P
@@ -860,3 +871,181 @@ makes:
             constant: -8200.0
             temperature: 0.0
             pressure: 1.4
+   magnesioRiebekiteGreen:
+      abbreviation: mrbG
+      make:
+         # --- mrbG  = 1 gl - 1 gr + 1 andr
+         glaucophane: 1.0
+         grossular: -1.0
+         andradite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 0.0
+         units: joule/mole
+         coefficients:
+            constant: 0.0
+            temperature: 0.0
+            pressure: 0.0
+   kPargasite:
+      abbreviation: kprg
+      make:
+         # --- kprg  = 1 mu - 1 pa + 1 parg
+         muscovite: 1.0
+         paragonite: -1.0
+         pargasite: 1.0
+      DQF:
+         # --- DQF(J/mol) = -7060 + 20 * T_K
+         units: joule/mole
+         coefficients:
+            constant: 7060.0
+            temperature: 20.0
+            pressure: 0.0
+   titanoTschermakite:
+      abbreviation: tts
+      make:
+         # --- tts   = -2 dsp + 2 ru + 1 ts
+         diaspore: -2.0
+         rutile: 2.0
+         tschermakite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 95000
+         units: joule/mole
+         coefficients:
+            constant: 95000
+            temperature: 0.0
+            pressure: 0.0
+   ferrosiliteCpxEndMemberG
+      abbreviation: cfsg
+      make:
+         # --- cfsg = 1 fs
+         ferrosilite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 2100 - 2 * T + 0.045 * P
+         units: joule/mole
+         coefficients:
+            constant: 2100.0
+            temperature: -2.0
+            pressure: 0.045
+   sodicAluminoCalcoFerriteB:
+      abbreviation: nacfb
+      make:
+         # --- nacfb = 1 nacf
+         sodicAluminoCalcoFerrite: 1.0
+      DQF:
+         # --- DQF(J/mol) = -9000
+         units: joule/mole
+         coefficients:
+            constant: -9000.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioFerroPerovskite:
+      abbreviation: mfpv
+      make:
+         # --- mfpv = 1 fpv
+         ferroPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = -9500
+         units: joule/mole
+         coefficients:
+            constant: -9500.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioCalcoPerovskite:
+      abbreviation: mcpv
+      make:
+         # --- mcpv = 1 cpv
+         calcoPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 60000
+         units: joule/mole
+         coefficients:
+            constant: 60000.0
+            temperature: 0.0
+            pressure: 0.0
+   magnesioSodicPerovskite:
+      abbreviation: mnpv
+      make:
+         # --- mnpv = 1 npv
+         sodicPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 16000
+         units: joule/mole
+         coefficients:
+            constant: 16000.0
+            temperature: 0.0
+            pressure: 0.0
+   calcoMagnesioPerovskite:
+      abbreviation: cmpv
+      make:
+         # --- cmpv = 1 mpv
+         magnesioPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 35000
+         units: joule/mole
+         coefficients:
+            constant: 35000.0
+            temperature: 0.0
+            pressure: 0.0
+   calcoFerroPerovskite:
+      abbreviation: cfpv
+      make:
+         # --- cfpv = 1 fpv
+         ferroPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 24000
+         units: joule/mole
+         coefficients:
+            constant: 24000.0
+            temperature: 0.0
+            pressure: 0.0
+   calcoAluminoPerovskite:
+      abbreviation: capv
+      make:
+         # --- capv = 1 apv
+         aluminoPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 45000
+         units: joule/mole
+         coefficients:
+            constant: 45000.0
+            temperature: 0.0
+            pressure: 0.0
+   calcoSodicPerovskite:
+      abbreviation: cnpv
+      make:
+         # --- cnpv = 1 npv
+         sodicPerovskite: 1.0
+      DQF:
+         # --- DQF(J/mol) = 25000
+         units: joule/mole
+         coefficients:
+            constant: 25000.0
+            temperature: 0.0
+            pressure: 0.0 
+   ferroSilicoCorundum:
+      abbreviation: fcor
+      make:
+         # --- fcor = 1 mcor + 1 fak - 1 mak 
+         magnesioSilicoCorundum: 1.0
+         ferroAkimoitoite: 1.0
+         magnesioAkimoitoite: -1.0
+      DQF:
+         # --- DQF(J/mol) = -15d3 
+         units: joule/mole
+         coefficients:
+            constant: -15000.0
+            temperature: 0.0
+            pressure: 0.0
+   highPressureMagnesioTschermakite:
+      abbreviation: hmgts
+      make:
+         # --- hmgts  = 1 mgts + 1 hen - 1 en 
+         magnesioTschermakite: 1.0
+         highPressureEnstatite: 1.0
+         enstatite: -1.0
+      DQF:
+         # --- DQF(J/mol) = -1d3 
+         units: joule/mole
+         coefficients:
+            constant: -1000.0
+            temperature: 0.0
+            pressure: 0.0
