@@ -1,0 +1,209 @@
+---
+#
+# Notation (incomplete and NOT alphabetical!)
+#
+phasesEntities:
+   akermanite:
+      abbreviation: ak
+      formula: Ca2MgSi2O7
+      components:
+         CaO:2
+         Mg0:1
+         SiO2:2
+      equationOfState: 8
+      stdEntalpy: -3865580.0
+      stdGibbs: -3928937.0
+      stdEntropy: 212.5
+      stdVolume: 9.254
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 385.4
+         c2: 0.3209E-2
+         c3: -247500
+         c4: 0.0
+         c5: -2889.9
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.257E-4
+         b5: 440.4445
+         b6: 1420000.0
+         b7: -0.29E-5
+         b8: 4.06
+      transition: None
+   # ---
+   almandine:
+      abbreviation: alm
+      formula: Fe3Al2Si3O12
+      components:
+         Al2O3:1
+         SiO2:3
+         FeO:3
+      equationOfState: 8
+      stdEntalpy: -5692410.0
+      stdGibbs: -5367537.0
+      stdEntropy: 337.0
+      stdVolume: 11.525
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 716.2
+         c2: -0.1241E-1
+         c3: -3160800.0
+         c4: 0.0
+         c5: -5863.5
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.212E-4
+         b5: 456.6767
+         b6: 1740000.0
+         b7: -0.38E-5
+         b8: 6.68
+      transition: None
+   # ---
+   andalusite:
+      abbreviation: and
+      formula: Al2SiO5
+      components:
+         Al2O3:1
+         SiO2:1
+      equationOfState: 8
+      stdEntalpy: -2588600.0
+      stdGibbs: -2616239.0
+      stdEntropy: 92.7
+      stdVolume: 5.153
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 277.3
+         c2: -0.6588E-2
+         c3: -1914100.0
+         c4: 0.0
+         c5: -2265.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.181E-4
+         b5: 589.9875
+         b6: 1442000.0
+         b7: -0.48E-5
+         b8: 6.89
+      transition: None
+   # ---
+   andradite:
+      abbreviation: andr
+      formula: Ca3Fe2Si3O12
+      components:
+         CaO:3
+         Fe0:2
+         SiO2:3
+         O2:0.5
+      stdEntalpy: -5768870.0
+      stdGibbs: -5863205
+      stdEntropy: 316.4
+      stdVolume: 13.204
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 638.6
+         c2: 0.0
+         c3: -4955100
+         c4: 0.0
+         c5: -3989.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.286E-4
+         b5: 477.8077
+         b6: 1588000.0
+         b7: -0.36E-5
+         b8: 5.68
+      transition: None
+   # ---
+   clinohumite:
+      abbreviation: chum
+      formula: Mg9Si4O16(OH)2
+      # --- MgO(9)SiO2(4)H2O(1)
+      components:
+         MgO:9
+         H2O:1
+         SiO2:4
+      equationOfState: 8
+      stdEntalpy: -9613220.0
+      stdGibbs: -9744555.0
+      stdEntropy: 440.5
+      stdVolume: 19.801
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1071.0
+         c2: -0.16533E-1
+         c3: -7899600.0
+         c4: 0.0
+         c5: -7373.9
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.32E-4
+         b5: 537.4843
+         b6: 1199000.0
+         b7: -0.38E-5
+         b8: 4.58
+      transition: None
+   # ---
+   clinozoisite:
+      abbreviation: cz
+      formula: Ca2Al3Si3O12(OH)
+      components:
+         CaO:2
+         Al2O3:1.5
+         SiO2:3
+         H2O:0.5
+      equationOfState: 8
+      stdEntalpy: -6895400.0
+      stdGibbs: -6985143.0
+      stdEntropy: 301.0
+      stdVolume: 13.63
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 630.9
+         c2: 0.13693E-1
+         c3: -6645800.0
+         c4: 0.0
+         c5: -3731.1
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.233E-4
+         b5: 528.5805
+         b6: 1197000.0
+         b7: -0.34E-5
+         b8: 4.07
+      transition: None
+# ---
+# ---
+#  phase:
+#      abbreviation:
+#      formula:
+#      components:
+#         CaO:2
+#         Mg0:1
+#         SiO2:2
+#      equationOfState:
+#      stdEntalpy:
+#      stdGibbs:
+#      stdEntropy:
+#      stdVolume:
+#      cCoefficients:
+#         # --- c1,c2,c3,c4,c5
+#         c1:
+#         c2:
+#         c3:
+#         c4:
+#         c5:
+#      bCoefficients:
+#         # --- b1,b5,b6,b7,b8
+#         #     No b2,b3,b4 it seems
+#         b1:
+#         b5:
+#         b6:
+#         b7:
+#         b8:
+#      transition: None
