@@ -1112,6 +1112,8 @@ makes:
             temperature: 0.0
             pressure: 0.0
    calcoEsseneiteCpxEndMemberHGP:
+      # --- HGP stands for Holland, Green & Powell,
+      #     2018 J. Petr.Vol. 59, No. 5, 881–900
       abbreviation: cessh
       make:
          # --- cessh = 1 cats + 1 acm - 1 jd
@@ -1125,3 +1127,214 @@ makes:
             constant: -3450.0
             temperature: 0.0
             pressure: 0.0
+   chromicDiopsideCpxEndMemberHGP:
+      abbreviation: crdih
+      make:
+         # --- crdih = 1 cats + 1 kos - 1 jd
+         calcoTschermakite: 1.0
+         kosmochlor: 1.0
+         jadeite: -1.0
+      DQF:
+         # --- DQF(J/mol) = -4900
+         units: joule/mole
+         coefficients:
+            constant: -4900.0
+            temperature: 0.0
+            pressure: 0.0
+   calcoMagnesioBuffoniteHGP:
+      abbreviation: mcbuf
+      make:
+         # --- mcbuf = cats + 1/2 per + 1/2 ru -1/2 cor
+         calcoTschermakite: 1.0
+         periclase: 1.0/2.0
+         rutile: 1.0/2.0
+         corundum: -1.0
+      DQF:
+         # --- DQF(J/mol) = -16.2d3 - 1.2 * T - 0.005 * P
+         units: joule/mole
+         coefficients:
+            constant: -16200.0
+            temperature: -1.2
+            pressure: 0.005
+   kJadeiteHGP:
+      abbreviation: kjdh
+      make:
+         # --- kjdh  = 1 jd + 1 san - 1 abh
+         jadeite: 1.0
+         sanidine: 1.0
+         highAlbite: -1.0
+      DQF:
+         # --- DQF(J/mol) = 11.7d3 + 0.6 * P
+         units: joule/mole
+         coefficients:
+            constant: -11700.0
+            temperature: 0.0
+            pressure: 0.6
+   chromicEnstatiteHGP:
+      abbreviation: crenh
+      make:
+         # --- crenh = 1 mgts + 1 kos - 1 jd
+         magnesioTschermakite: 1.0
+         kosmochlor: 1.0
+         jadeite: -1.0
+      DQF:
+         # --- DQF(J/mol) = 25900 + 15.5 * T + 0.05 * P
+         units: joule/mole
+         coefficients:
+            constant: 25900.0
+            temperature: 15.5
+            pressure: 0.05
+   magnesioBuffoniteHGP:
+      # --- o in obuf likely stands for
+      #    "ortho"
+      abbreviation: obuf
+      make:
+         # --- obuf = mgts + 1/2 per + 1/2 ru -1/2 cor
+         magnesioTschermakite: 1.0
+         periclase: 1.0/2.0
+         rutile: 1.0/2.0
+         corundum: -1.0
+      DQF:
+         # ---  DQF = -5000 - 5.1 * T - 0.0061 * P
+         units: joule/mole
+         coefficients:
+            constant: -5000.0
+            temperature: -5.1
+            pressure: 0.0061
+   magnesioAcmite:
+      abbreviation: macm
+      make:
+         # --- macm = 1 mgts + 1 acm - 1 jd
+         magnesioTschermakite: 1.0
+         acmite: 1.0
+         jadeite: -1.0
+      DQF:
+         # --- DQF = 4800 - 0.089 * P
+         units: joule/mole
+         coefficients:
+            constant: 4800.0
+            temperature: 0.0
+            pressure: 0.089
+   orthoJadeite:
+      abbreviation: ojd
+      make:
+         # --- ojd = 1 jd
+         jadeite: -1.0
+      DQF:
+         # --- DQF = 18800
+         units: joule/mole
+         coefficients:
+            constant: 18800.0
+            temperature: 0.0
+            pressure: 0.0
+   highDensityForsteriteLiquid:
+      abbreviation: foHL
+      make:
+         # --- foHL = 2 foL
+         forsteriteLiquid: 2.0
+      DQF:
+         # --- DQF = 8.67d3    - 0.131*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 8670.0
+            temperature: 0.0
+            pressure: -0.131
+   highDensityFayaliteLiquid:
+      abbreviation: faHL
+      make:
+         # --- faHL = 2 faL
+         fayaliteLiquid: 2.0
+      DQF:
+         # --- DQF = 13.7d3    - 0.055*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 13700.0
+            temperature: 0.0
+            pressure: -0.055 
+   highDensitySilicaLiquid:
+      abbreviation: faHL
+      make:
+         # --- qHL = 4 qL
+         silicaLiquid: 4.0
+      DQF:
+         # --- DQF = 13.7d3    - 0.055*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 13700.0
+            temperature: 0.0
+            pressure: -0.055
+   highDensityJadeiteLiquid:
+      abbreviation: jdL
+      make:
+         # --- jdL = 1 abL - 1 qL
+         albiteLiquid: 1.0
+         silicaLiquid: -1.0
+      DQF:
+         # --- DQF = 12.19d3  - 0.089*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 12190.0
+            temperature: 0.0
+            pressure: -0.089
+   highDensityHematiteLiquid:
+      abbreviation: hmL
+      make:
+         # --- hmL = 1/2 hemL
+         hematiteLiquid: 1.0/2.0
+      DQF:
+         # --- DQF = 3.3d3    - 0.032*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 3300.0
+            temperature: 0.0
+            pressure: -0.032
+   highDensityEskolaiteLiquid:
+      abbreviation: ekL
+      make:
+         # --- ekL = 1/2 eskL
+         eskolaiteLiquid: 1.0/2.0
+      DQF:
+         # --- DQF = 24.85d3  + 0.245*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 24850.0
+            temperature: 0.0
+            pressure: 0.245
+   highDensityRutileLiquid:
+      abbreviation: tiL
+      make:
+         # --- tiL = 1 ruL
+         rutileLiquid: 1.0/2.0
+      DQF:
+         # --- DQF = 5.58d3   - 0.489*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 5580.0
+            temperature: 0.0
+            pressure: -0.489
+   highDensityKFeldparLiquid:
+      abbreviation: kjL
+      make:
+         # --- kjL = 1 kspL - 1 qL
+         kFeldsparLiquid: 1.0
+         silicaLiquid: -1.0
+      DQF:
+         # --- DQF = 11.98d3  - 0.210*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 11980.0
+            temperature: 0.0
+            pressure: -0.210
+   lowDensityFluidAndForsteriteLiquid:
+      abbreviation: foWL
+      make:
+         # --- foWL = 2 foL
+         forsteriteLiquid: 2.0
+      DQF:
+         # --- DQF = 8.59d3     - 0.136*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 8590.0
+            temperature: 0.0
+            pressure: -0.136
+
