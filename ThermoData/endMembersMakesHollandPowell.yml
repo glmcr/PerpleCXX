@@ -1250,7 +1250,7 @@ makes:
          coefficients:
             constant: 13700.0
             temperature: 0.0
-            pressure: -0.055 
+            pressure: -0.055
    highDensitySilicaLiquid:
       abbreviation: faHL
       make:
@@ -1337,4 +1337,77 @@ makes:
             constant: 8590.0
             temperature: 0.0
             pressure: -0.136
-
+   lowDensityFluidAndFayaliteLiquid:
+      abbreviation: foWL
+      make:
+         # --- faWL = 2 faL
+         fayaliteLiquid: 2.0
+      DQF:
+         # --- DQF = 13.56d3    - 0.052*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 13560.0
+            temperature: 0.0
+            pressure: -0.052
+   lowDensityFluidAndSilicaLiquid:
+      abbreviation: qWL
+      make:
+         # --- qWL = 4 qL
+         silicaLiquid: 4.0
+      DQF:
+         # --- DQF = 2.1d3     - 0.051*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 2100.0
+            temperature: 0.0
+            pressure: -0.051
+   lowDensityFluidAndJadeiteLiquid:
+      abbreviation: jdWL
+      make:
+         # --- jdWL = 1 abL - 1 qL
+         albiteLiquid: 1.0
+         silicaLiquid: -1.0
+      DQF:
+         # --- DQF = 12.32d3   - 0.099*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 12320.0
+            temperature: 0.0
+            pressure: -0.099
+   lowDensityFluidAndKFeldsparLiquid:
+      abbreviation: kWL
+      make:
+         # --- kWL = 1 kspL - 1 qL
+         kFeldsparLiquid: 1.0
+         silicaLiquid: -1.0
+      DQF:
+         # --- DQF = 12.88d3   - 0.227*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 12880.0
+            temperature: 0.0
+            pressure: -0.227
+   lowDensityFluidAndHematiteLiquid:
+      abbreviation: hmWL
+      make:
+         # --- hmWL = 1/2 hemL
+         hematiteLiquid: 1.0/2.0
+      DQF:
+         # --- DQF = 4.05d3    - 0.077*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 4050.0
+            temperature: 0.0
+            pressure: -0.077
+   lowDensityFluidAndRutileLiquid:
+      abbreviation: tiWL
+      make:
+         # --- tiWL = 1 ruL
+         rutileLiquid: 1.0/2.0
+      DQF:
+         # --- DQF = 5.6d3     - 0.489*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 5600.0
+            temperature: 0.0
+            pressure: -0.489
