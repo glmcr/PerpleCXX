@@ -4,7 +4,21 @@
 #     file instead of being hardcoded with
 #     the same values in many files.
 #     (*** Which is very error-prone !!!)
-makes:
+endMembers:
+   ferroOsumilite:
+      # --- osfa == fosm
+      abbreviation: osfa
+      # --- No make seems to be defined
+      #     for ferroOsumilite in Perple_X files.
+      #     but there is DQF data for it in
+      #     the solution_model.dat file
+      DQF:
+         # --- dqf =  24.8d3 - 0.02d3 * T_K
+         units: joule/mole
+         coefficients:
+            constant: 24800.0
+            temperature: 20.0
+            pressure: 0.0
    ferroBrucite:
       abbreviation: fbr
       make:
