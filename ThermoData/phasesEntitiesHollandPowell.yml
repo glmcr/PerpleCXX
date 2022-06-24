@@ -2118,34 +2118,328 @@ phasesEntities:
          b7: -0.59E-5
          b8: 4.11
    # ---
-   :
-      abbreviation:
-      formula:
+   eastonite:
+      abbreviation: east
+      formula: KMg2Al3Si2O10(OH)2
       components:
-         CaO: 2
-         MgO: 1
-         Al2O3: 1
+         K2O: 0.5
+         MgO: 2
+         Al2O3: 1.5
          SiO2: 2
-      equationOfState:
-      stdEntalpy:
-      stdGibbs:
-      stdEntropy:
-      stdVolume:
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -6330120.0
+      stdGibbs: -6424932.0
+      stdEntropy: 318.0
+      stdVolume: 14.738
       cCoefficients:
          # --- c1,c2,c3,c4,c5
-         c1:
-         c2:
-         c3:
+         c1: 785.5
+         c2: -0.38031E-1
+         c3: -2130300.0
          c4: 0.0
-         c5:
+         c5: -6893.7
       bCoefficients:
          # --- b1,b5,b6,b7,b8
          #     No b2,b3,b4 it seems
-         b1:
-         b5:
-         b6:
-         b7:
-         b8:
+         b1: 0.38E-4
+         b5: 509.0324
+         b6: 530000.0
+         b7: -0.143E-4
+         b8: 7.33
+   # ---
+   ferroCeladonite:
+      abbreviation: fcel
+      formula: KFeAlSi4O10(OH)2
+      components:
+         K2O: 0.5
+         FeO: 1
+         Al2O3: 0.5
+         SiO2: 4
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -5468630.0
+      stdGibbs: -5567019.0
+      stdEntropy: 330.0
+      stdVolume: 14.07
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 756.3
+         c2: -0.19147E-1
+         c3: -1586100.0
+         c4: 0.0
+         c5: -6928.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.318E-4
+         b5: 480.0877
+         b6: 700000.0
+         b7: -0.59E-5
+         b8: 4.11
+   # ---
+   margarite:
+      abbreviation: ma
+      formula: CaAl4Si2O10(OH)2
+      components:
+         CaO: 1
+         Al2O3: 2
+         SiO2: 2
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -6241920.0
+      stdGibbs: -6320930.0
+      stdEntropy: 265.0
+      stdVolume: 12.964
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 744.4
+         c2: -0.168E-1
+         c3: -2074400.0
+         c4: 0.0
+         c5: -6783.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.233E-4
+         b5: 558.0552
+         b6: 1000000.0
+         b7: -0.41E-5
+         b8: 4.08
+   # ---
+   maganesoBiotite:
+      abbreviation: mnbi
+      formula: KMn3AlSi3O10(OH)2
+      components:
+         K2O: 0.5
+         MnO: 3
+         Al2O3: 0.5
+         SiO2: 3
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -5475460.0
+      stdGibbs: -5604559.0
+      stdEntropy: 433.0
+      stdVolume: 15.264
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 809.9
+         c2: -0.59213E-1
+         c3: -1514400.0
+         c4: 0.0
+         c5: -6998.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.38E-4
+         b5: 407.1692
+         b6: 530000.0
+         b7: -0.143E-4
+         b8: 7.33
+   # ---
+   muscovite:
+      abbreviation: mu
+      formula: KAl3Si3O10(OH)2
+      components:
+         K2O: 0.5
+         Al2O3: 1.5
+         SiO2: 3
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -5976510.0
+      stdGibbs: -6063570.0
+      stdEntropy: 292.0
+      stdVolume: 14.083
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 756.4
+         c2: -0.1984E-1
+         c3: -2170000.0
+         c4: 0.0
+         c5: -6979.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.307E-4
+         b5: 522.7881
+         b6: 490000.0
+         b7: -0.85E-5
+         b8: 4.15
+   # ---
+   sodicPhlogopite:
+      abbreviation: naph
+      formula: NaMg3AlSi3O10(OH)2
+      components:
+         Na2O: 0.5
+         MgO: 3
+         Al2O3: 0.5
+         SiO2: 3
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -6164670.0
+      stdGibbs: -6259482.0
+      stdEntropy: 318.0
+      stdVolume: 14.45
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 773.5
+         c2: -0.40229E-1
+         c3: -2597900.0
+         c4: 0.0
+         c5: -6512.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.328E-4
+         b5: 509.0324
+         b6: 513000.0
+         b7: -0.143E-4
+         b8: 7.33
+   # ---
+   paragonite:
+      abbreviation: pa
+      formula: NaAl3Si3O10(OH)2
+      components:
+         Na2O: 0.5
+         Al2O3: 1.5
+         SiO2: 3
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -5942660.0
+      stdGibbs: -6025248.0
+      stdEntropy: 277.0
+      stdVolume: 13.211
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 803.0
+         c2: -0.3158E-1
+         c3: 217000.0
+         c4: 0.0
+         c5: -8151.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.37E-4
+         b5: 541.8106
+         b6: 515000.0
+         b7: -0.126E-4
+         b8: 6.51
+   # ---
+   phlogopite:
+      abbreviation: phl
+      formula: KMg3AlSi3O10(OH)2
+      components:
+         K2O: 0.5
+         MgO: 3
+         Al2O3: 0.5
+         SiO2: 3
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -6214610.0
+      stdGibbs: -6311807.0
+      stdEntropy: 326.0
+      stdVolume: 14.964
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 770.3
+         c2: -0.36939E-1
+         c3: -2328900.0
+         c4: 0.0
+         c5: -6531.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.38E-4
+         b5: 500.325
+         b6: 513000.0
+         b7: -0.143E-4
+         b8: 7.33
+   # ---
+   aluminumFreeChlorite:
+      abbreviation: afchl
+      formula: Mg6Si4O10(OH)8
+      components:
+         MgO: 6
+         SiO2: 4
+         H2O: 4
+      equationOfState: 8
+      stdEntalpy: -8727580.0
+      stdGibbs: -8858468.0
+      stdEntropy: 439.0
+      stdVolume: 21.57
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1155.0
+         c2: -0.417E-3
+         c3: -4024400.0
+         c4: 0.0
+         c5: -9952.9
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.204E-4
+         b5: 570.771
+         b6: 870000.0
+         b7: -0.47E-5
+         b8: 4.09
+   # ---
+   amesite14Angstroms:
+      abbreviation: ames
+      formula: Mg4Al4Si2O10(OH)8
+      components:
+         MgO: 4
+         Al2O3: 2
+         SiO2: 2
+         H2O: 4
+      equationOfState: 8
+      stdEntalpy: -9040330.0
+      stdGibbs: -9163168.0
+      stdEntropy: 412.0
+      stdVolume: 20.71
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1186.0
+         c2: -0.2599E-2
+         c3: -3627200.0
+         c4: 0.0
+         c5: -10677.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.2E-4
+         b5: 594.7068
+         b6: 870000.0
+         b7: -0.47E-5
+         b8: 4.09
+   # ---
+   orderedClinochlore:
+      abbreviation: clin
+      formula: Mg5Al2Si3O10(OH)8
+      components:
+         MgO: 5
+         Al2O3: 1
+         SiO2: 3
+         H2O: 4
+      equationOfState: 8
+      stdEntalpy: -8908950.0
+      stdGibbs: -9039242.0
+      stdEntropy: 437.0
+      stdVolume: 21.14
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1170.8
+         c2: -0.1508E-2
+         c3: -3825800.0
+         c4: 0.0
+         c5: -10315.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.204E-4
+         b5: 572.4777
+         b6: 870000.0
+         b7: -0.47E-5
+         b8: 4.09
 
 # ---
    # ---
