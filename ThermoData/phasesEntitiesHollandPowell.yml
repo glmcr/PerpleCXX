@@ -1564,6 +1564,120 @@ phasesEntities:
          b6: 795000.0
          b7: -0.52E-5
          b8: 4.1
+   # ---
+   anthophyllite:
+      abbreviation: anth
+      formula: Mg7Si8O22(OH)2
+      components:
+         MgO: 7
+         SiO2: 8
+         H20 : 1
+      equationOfState: 8
+      stdEntalpy: -12065900.0
+      stdGibbs: -12226010.0
+      stdEntropy: 537.0
+      stdVolume: 26.54
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1277.3
+         c2: 0.25825E-1
+         c3: -9704600.0
+         c4: 0.0
+         c5: -9074.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.252E-4
+         b5: 544.3873
+         b6: 700000.0
+         b7: -0.59E-5
+         b8: 4.11
+   # ---
+   cummingtonite:
+      abbreviation: cumm
+      formula: Mg7Si8O22(OH)2
+      components:
+         MgO: 7
+         SiO2: 8
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -12063750.0
+      stdGibbs: -12224150
+      stdEntropy: 538.0
+      stdVolume: 26.33.0
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1277.3
+         c2: 0.25825E-1
+         c3: -9704600.0
+         c4: 0.0
+         c5: -9074.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.252E-4
+         b5: 543.7085
+         b6: 700000.0
+         b7: -0.59E-5
+         b8: 4.11
+   # ---
+   ferroAnthophyllite:
+      abbreviation: fanth 
+      formula: Fe7Si8O22(OH)2
+      components:
+         FeO: 7
+         SiO2: 8
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -9623750.0
+      stdGibbs: -9839909.0
+      stdEntropy: 725.0
+      stdVolume: 27.87
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1383.1
+         c2: 0.30669E-1
+         c3: -4224700.0
+         c4: 0.0
+         c5: -11257.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.274E-4
+         b5: 440.9084
+         b6: 700000.0
+         b7: -0.59E-5
+         b8: 4.11
+   # ---
+   ferroGlaucophane:
+      abbreviation: fgl
+      formula: Na2Fe3Al2Si8O22(OH)2
+      components:
+         Na2O: 1
+         FeO: 3
+         Al2O3: 1
+         SiO2: 8
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -10879520.0
+      stdGibbs: -11065570.0
+      stdEntropy: 624.0
+      stdVolume: 26.59
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1762.9
+         c2: -0.118992
+         c3: 9423700.0
+         c4: 0.0
+         c5: -20207.1
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.183E-4
+         b5: 491.0545
+         b6: 890000.0
+         b7: -0.46E-5
+         b8: 4.09
 # ---
    # ---
 #   phase:
