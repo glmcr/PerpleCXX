@@ -2754,6 +2754,452 @@ phasesEntities:
          b6: 430000.0
          b7: -0.144E-4
          b8: 6.17
+   # ---
+   talcoTschermakite:
+      abbreviation: tats
+      formula: Mg2Al2Si3O10(OH)2
+      components:
+         MgO: 2
+         Al2O3: 1
+         SiO2: 3
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -6000930.0
+      stdGibbs: -6078151.0
+      stdEntropy: 259.0
+      stdVolume: 13.51
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 549.5
+         c2: 0.36324E-1
+         c3: -8606600.0
+         c4: 0.0
+         c5: -2515.3
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.18E-4
+         b5: 566.5483
+         b6: 430000.0
+         b7: -0.144E-4
+         b8: 6.17
+   # ---
+   albite:
+      abbreviation: ab
+      formula: NaAlSi3O8
+      components:
+         Na2O: 0.5
+         Al2O3: 0.5
+         SiO2: 3
+      equationOfState: 8
+      stdEntalpy: -3935290.0
+      stdGibbs: -3997126.0
+      stdEntropy: 207.4
+      stdVolume: 10.067
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 452
+         c2: -0.13364E-1
+         c3: -1275900
+         c4: 0.0
+         c5: -3953.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.236E-4
+         b5: 474.9519
+         b6: 541000.0
+         b7: -0.109E-4
+         b8: 5.91
+      transition:
+         1:
+            type: 5
+            t1: 14000
+            t2: 0.42E-1
+            t3: 13000
+            t4: 0.42E-1
+            t5: 3.0
+            t6: 0.9
+            t7: 0.0
+
+   # ---
+   analcite:
+      abbreviation: anl
+      formula: NaAlSi2O6H2O
+      components:
+         Na2O: 0.5
+         Al2O3: 0.5
+         SiO2: 2
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -3307050.0
+      stdGibbs: -3376221.0
+      stdEntropy: 232.0
+      stdVolume: 9.74
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 643.5
+         c2: -0.16067E-1
+         c3: 9302300.0
+         c4: 0.0
+         c5: -9179.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.276E-4
+         b5: 437.945
+         b6: 400000.0
+         b7: -0.104E-4
+         b8: 4.18
+   # ---
+   anorthite:
+      abbreviation: an
+      formula: CaAl2Si2O8
+      components:
+         CaO: 1
+         Al2O3: 1
+         SiO2: 2
+      equationOfState: 8
+      stdEntalpy: -4232600.0
+      stdGibbs: -4292379.0
+      stdEntropy: 200.5
+      stdVolume: 10.079
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 370.5
+         c2: 0.1001E-1
+         c3: -4339100.0
+         c4: 0.0
+         c5: -1960.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.141E-4
+         b5: 486.4823
+         b6: 860000.0
+         b7: -0.48E-5
+         b8: 4.09
+      transition:
+         1:
+            type: 5
+            t1: 42010.0 
+            t2: 0.1
+            t3: 42000.0
+            t4: 0.1
+            t5: 1.0
+            t6: 2.0
+            t7: 0.0
+   # ---
+   coesite:
+      abbreviation: coe
+      formula: SiO2
+      components:
+         SiO2: 1
+      equationOfState: 8
+      stdEntalpy: -906990.0
+      stdGibbs: -918796.7
+      stdEntropy: 39.6
+      stdVolume: 2.064
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 107.8
+         c2: -0.3279E-2
+         c3: -190300.0
+         c4: 0.0
+         c5: -1041.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.123E-4
+         b5: 541.5479
+         b6: 979000.0
+         b7: -0.43E-5
+         b8: 4.19
+   # ---
+   cristobalite:
+      abbreviation: crst
+      formula: SiO2
+      components:
+         SiO2: 1
+      equationOfState: 8
+      stdEntalpy: -904260.0
+      stdGibbs: -919423.9
+      stdEntropy: 50.86
+      stdVolume: 2.745
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 72.7
+         c2: 0.1304E-2
+         c3: -4129000.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 454.6594
+         b5: 0.0
+         b6: 160000.0
+         b7: -0.272E-4
+         b8: 4.35
+   # ---
+   heulandite:
+      abbreviation: heu
+      formula: CaAl2Si7O186H2O
+      components:
+         CaO: 1
+         Al2O3: 1
+         SiO2: 7
+         H2O: 6
+      equationOfState: 8
+      stdEntalpy: -10545090.0
+      stdGibbs: -10778540.0
+      stdEntropy: 783.0
+      stdVolume: 31.7
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1504.8
+         c2: -0.33224E-1
+         c3: -2959300.0
+         c4: 0.0
+         c5: -13297.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.157E-4
+         b5: 453.3338
+         b6: 274000.0
+         b7: -0.146E-4
+         b8: 4.0
+   # ---
+   highalbite:
+      abbreviation: abh
+      formula: NaAlSi3O8
+      components:
+         Na2O: 0.5
+         Al2O3: 0.5
+         SiO2: 3
+      equationOfState: 8
+      stdEntalpy: -3921290.0
+      stdGibbs: -3988165.0
+      stdEntropy: 224.3
+      stdVolume: 10.105
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 452.0
+         c2: -0.13364E-1
+         c3: -1275900.0
+         c4: 0.0
+         c5: -3953.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.241E-4
+         b5: 448.8929
+         b6: 541000.0
+         b7: -0.109E-4
+         b8: 5.91
+   # ---
+   laumontite:
+      abbreviation: lmt
+      formula: CaAl2Si4O124H2O
+      components:
+         CaO: 1
+         Al2O3: 1 
+         SiO2: 4
+         H2O: 4
+      equationOfState: 8
+      stdEntalpy: -7262590.0
+      stdGibbs: -7401230.0
+      stdEntropy: 465.0
+      stdVolume: 20.37
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1013.4
+         c2: -0.21413E-1
+         c3: -2235800.0
+         c4: 0.0
+         c5: -8806.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.137E-4
+         b5: 496.0821
+         b6: 860000.0
+         b7: -0.48E-5
+         b8: 4.09
+   # ---
+   leucite:
+      abbreviation: lc
+      formula: KAlSi2O6
+      components:
+         K2O: 0.5
+         Al2O3: 0.5
+         SiO2: 2
+      equationOfState: 8
+      stdEntalpy: -3029430.0
+      stdGibbs: -3088613.0
+      stdEntropy: 198.5
+      stdVolume: 8.826
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 369.8
+         c2: -0.16332E-1
+         c3: 684700.0
+         c4: 0.0
+         c5: -3683.1
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.185E-4
+         b5: 404.5645
+         b6: 450000.0
+         b7: -0.127E-4
+         b8: 5.7
+      transition:
+         1:
+            type: 5
+            t1: 11610
+            t2: 0.4
+            t3: 11600
+            t4: 0.4
+            t5: 2.0
+            t6: 0.7
+            t7: 0.0
+   # ---
+   meionite:
+      abbreviation: me
+      formula: Ca4Al6Si6O24(CO3)
+      components:
+         CaO: 4
+         Al2O3: 3
+         SiO2: 6
+         CO2: 1
+      equationOfState: 8
+      stdEntalpy: -13841600.0
+      stdGibbs: -14065810.0
+      stdEntropy: 752.0
+      stdVolume: 33.985
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 1359.0
+         c2: 0.36442E-1
+         c3: -8594700.0
+         c4: 0.0
+         c5: -9598.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.181E-4
+         b5: 452.0012
+         b6: 870000.0
+         b7: -0.47E-5 
+         b8: 4.09
+   ## ---
+   ## Comment taken from hp622ver.dat:
+   ## the microcline model is excluded [commented out] here,
+   ## because the model does not extrapolate plausibly.
+   ##
+   #microcline:
+   #   abbreviation: mic
+   #   formula: KAlSi3O8
+   #   components:
+   #      K2O: 0.5
+   #      Al2O3: 0.5
+   #      SiO2: 3
+   #   equationOfState: 8
+   #   stdEntalpy: -3975410.0
+   #   stdGibbs: -4039304.0
+   #   stdEntropy: 214.3
+   #   stdVolume: 10.871
+   #   cCoefficients:
+   #      # --- c1,c2,c3,c4,c5
+   #      c1: 448.8
+   #      c2: -0.10075E-1
+   #      c3: -1007300.0
+   #      c4: 0.0
+   #      c5: -3973.1
+   #   bCoefficients:
+   #      # --- b1,b5,b6,b7,b8
+   #      #     No b2,b3,b4 it seems
+   #      b1: 0.166E-4
+   #      b5: 463.9554
+   #      b6: 583000.0
+   #      b7: -0.69E-5
+   #      b8: 4.02
+   # ---
+   nepheline:
+      abbreviation: ne
+      formula: NaAlSiO4
+      components:
+         Na2O: 0.5
+         Al2O3: 0.5
+         SiO2: 1
+      equationOfState: 8
+      stdEntalpy: -2094860.0
+      stdGibbs: -2131950.0
+      stdEntropy: 124.4
+      stdVolume: 5.419
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 272.7
+         c2: -0.12398E-1
+         c3: 0.0
+         c4: 0.0
+         c5: -2763.1
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.463E-4
+         b5: 439.2967
+         b6: 465000.0
+         b7: -0.89E-5
+         b8: 4.16
+      transition:
+         1:
+            type: 4
+            t1: 467
+            t2: 10
+            t3: 0.8E-1
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
+   # ---
+   quartz:
+      abbreviation: q
+      formula: SiO2
+      components:
+         SiO2: 1
+      equationOfState: 8
+      stdEntalpy: -910710.0
+      stdGibbs: -923062.4
+      stdEntropy: 41.43
+      stdVolume: 2.269
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 92.9
+         c2: -0.642E-3
+         c3: -714900.0
+         c4: 0.0
+         c5: -716.1
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 525.2346
+         b6: 730000.0
+         b7: -0.82E-5
+         b8: 6.0
+      transition:
+         1:
+            type: 4
+            t1: 847
+            t2: 4.95
+            t3: 0.1188
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
 
 # ---
    # ---
