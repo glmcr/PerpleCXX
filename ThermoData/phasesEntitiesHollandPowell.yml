@@ -4196,7 +4196,7 @@ phasesEntities:
             t7: 0.0
    # ---
    iron:
-      abbreviation: Fe
+      abbreviation: iron
       formula: Fe
       components:
          FeO: 1
@@ -4237,7 +4237,7 @@ phasesEntities:
       formula: C
       components:
          CO2: 1
-         O2: -0.5
+         O2: -1
       equationOfState: 8
       stdEntalpy: 1890.000
       stdGibbs: 1186.366
@@ -4258,7 +4258,196 @@ phasesEntities:
          b6: 4465000.0
          b7: -0.36E-6
          b8: 1.61
-         
+   # ---
+   graphite:
+      abbreviation: gph
+      formula: C
+      components:
+         CO2: 1
+         O2: -1
+      equationOfState: 8
+      stdEntalpy: 0.000000
+      stdGibbs: -1717.344
+      stdEntropy: 5.76
+      stdVolume: 0.53
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 34.3
+         c2: 0.0
+         c3: -240700.0
+         c4: 0.0
+         c5: -403.8
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.165E-4
+         b5: 871.8033
+         b6: 312000.0
+         b7: -0.125E-4
+         b8: 3.9
+   # ---
+   carbonDioxide:
+      abbreviation: CO2
+      formula: CO2
+      components:
+         CO2: 1
+      equationOfState: 102
+      stdEntalpy: -393510.0
+      stdGibbs:  -457224.7
+      stdEntropy: 213.7
+      # --- Could use a negative volume
+      #     here to signals that the
+      #     stdVolume is not defined??
+      stdVolume: notDefined
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 87.8
+         c2: -0.2644E-2
+         c3: 706400.0
+         c4: 0.0
+         c5: -998.9
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 0.0
+         b6: 0.0
+         b7: 0.0
+         b8: 0.0
+   # ---
+   carbonMonoxide:
+      abbreviation: CO
+      formula: CO
+      components:
+         CO2: 1
+         O2: -0.5
+      equationOfState: 103 
+      stdEntalpy: -110530.0
+      stdGibbs: -169465.3
+      stdEntropy: 197.67
+      stdVolume: notDefined
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 45.7
+         c2: -0.97E-4
+         c3: 662700.0
+         c4: 0.0
+         c5: -414.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 0.0
+         b6: 0.0
+         b7: 0.0
+         b8: 0.0
+   # ---
+   hydrogen:
+      abbreviation: H2
+      formula: H2
+      components:
+         H2O: 1
+         O2: -0.5
+      equationOfState: 105
+      stdEntalpy: 0.000000
+      stdGibbs: -38968.2
+      stdEntropy: 130.7
+      stdVolume: notDefined
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 23.3
+         c2: 0.4627E-2
+         c3: 0.0
+         c4: 0.0
+         c5: 76.3
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 0.0
+         b6: 0.0
+         b7: 0.0
+         b8: 0.0
+   # ---
+   methane:
+      abbreviation: CH4
+      formula: CH4
+      components:
+         CO2: 1
+         H2O: 2
+         O2: -2
+      equationOfState: 104
+      stdEntalpy: -74810.00
+      stdGibbs: -130343.4
+      stdEntropy: 186.26
+      stdVolume: notDefined
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 150.1
+         c2: 0.2063E-2
+         c3: 3427700.0
+         c4: 0.0
+         c5: -2650.43
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 0.0
+         b6: 0.0
+         b7: 0.0
+         b8: 0.0
+   # ---
+   oxygen:
+      abbreviation: O2
+      formula: O2
+      components:
+         O2: 1
+      equationOfState: 107
+      stdEntalpy: 0.000000
+      stdGibbs: -61180.38
+      stdEntropy: 205.2
+      stdVolume: notDefined
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 48.3
+         c2: -0.691E-3
+         c3: 499200.0
+         c4: 0.0
+         c5: -420.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 0.0
+         b6: 0.0
+         b7: 0.0
+         b8: 0.0
+   # ---
+   waterFluid:
+      abbreviation: H2O
+      formula: H2O
+      components:
+         H2O: 1
+      equationOfState: 101
+      stdEntalpy: -241810.0
+      stdGibbs: -298100.7
+      stdEntropy: 188.8
+      stdVolume: notDefined
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 40.1
+         c2: 0.8656E-2
+         c3: 487500.0
+         c4: 0.0
+         c5: -251.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.0
+         b5: 0.0
+         b6: 0.0
+         b7: 0.0
+         b8: 0.0        
 # ---
    # ---
 #   phase:
