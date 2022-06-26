@@ -4423,10 +4423,10 @@ phasesEntities:
          b7: 0.0
          b8: 0.0
    # ---
-   waterFluid:
+   H2O.Fluid:
       abbreviation: H2O
       formula: H2O
-      components:
+      components: 
          H2O: 1
       equationOfState: 101
       stdEntalpy: -241810.0
@@ -4447,44 +4447,255 @@ phasesEntities:
          b5: 0.0
          b6: 0.0
          b7: 0.0
-         b8: 0.0        
-# ---
+         b8: 0.0
    # ---
-#   phase:
-#      abbreviation:
-#      formula:
-#      components:
-#         CaO: 2
-#         MgO: 1
-#         Al2O3: 1
-#         SiO2: 2
-#      equationOfState:
-#      stdEntalpy:
-#      stdGibbs:
-#      stdEntropy:
-#      stdVolume:
-#      cCoefficients:
-#         # --- c1,c2,c3,c4,c5
-#         c1:
-#         c2:
-#         c3:
-#         c4: 0.0
-#         c5:
-#      bCoefficients:
-#         # --- b1,b5,b6,b7,b8
-#         #     No b2,b3,b4 it seems
-#         b1:
-#         b5:
-#         b6:
-#         b7:
-#         b8:
-#      transition:
-#         1:
-#            type: 5
-#            t1: 36710.0
-#            t2: 0.1
-#            t3: 36700.0
-#            t4: 0.1
-#            t5: 2.0
-#            t6: 1.5
-#            t7: 0.0
+   anorthite.Liquid:
+      abbreviation: an.L
+      formula: anorthite
+      components: anorthite
+      equationOfState: 9
+      stdEntalpy: -4277920.0
+      stdGibbs: -4286566.0
+      stdEntropy: 29.0
+      stdVolume: 10.014
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 430.0
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.514E-4
+         b5: -55.0
+         b6: 210000.0
+         b7: -0.304E-4
+         b8: 6.38
+   # ---
+   albite.Liquid:
+      abbreviation: ab.L
+      formula: albite
+      components: albite
+      equationOfState: 9
+      stdEntalpy: -3925410.
+      stdGibbs: -3970103
+      stdEntropy: 149.9
+      stdVolume: 10.858
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 358
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.337E-4
+         b5: -26.0
+         b6: 176000.0
+         b7: -0.815E-4
+         b8: 14.35
+   # ---
+   diopside.Liquid:
+      abbreviation: di.L
+      formula: diopside
+      components: diopside
+      equationOfState: 9
+      stdEntalpy: -3193790.0
+      stdGibbs: -3206342.0
+      stdEntropy: 42.1
+      stdVolume: 7.288
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 334.0
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.851E-4
+         b5: -37.3
+         b6: 249000.0
+         b7: -0.323E-4
+         b8: 8.04
+   # ---
+   enstatite.Liquid:
+      abbreviation: en.L
+      formula: enstatite
+      components: enstatite
+      equationOfState: 9
+      stdEntalpy: -3096310.0
+      stdGibbs: -3095117.0
+      stdEntropy: -4.0
+      stdVolume: 6.984
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 353.6
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.681E-4
+         b5: -24.0
+         b6: 218000.0
+         b7: -0.33E-4
+         b8: 7.2
+   # ---
+   fayalite.Liquid:
+      abbreviation: fa.L
+      formula: fayalite
+      components: fayalite
+      equationOfState: 9
+      stdEntalpy: -1462820.0
+      stdGibbs: -1491442.0
+      stdEntropy: 96.0
+      stdVolume: 4.677
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 243.7
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.1071E-3
+         b5: -55.0
+         b6: 290000.0
+         b7: -0.359E-4
+         b8: 10.42
+   # ---
+   forsterite.Liquid:
+      abbreviation: fo.L
+      formula: forsterite
+      components: forsterite
+      equationOfState: 9
+      stdEntalpy: -2237250.0
+      stdGibbs: -2218765.0
+      stdEntropy: -62.0
+      stdVolume: 4.312
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 269.4
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.92E-4
+         b5: -44.0
+         b6: 362000.0
+         b7: -0.278E-4
+         b8: 10.06
+   # ---
+   H2O.Liquid:
+      abbreviation: H2O.L
+      formula: H2O.Fluid
+      components: H2O.Fluid
+      equationOfState: 9
+      stdEntalpy: -281650.0
+      stdGibbs: -301506.8
+      stdEntropy: 66.6
+      stdVolume: 1.3355
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 65.0
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.626E-3
+         b5: -10.6
+         b6: 42280.0
+         b7: -0.946E-4
+         b8: 4.0
+   # ---
+   potassicFeldspar.Liquid:
+      abbreviation: ksp.L
+      formula: microcline
+      components: microcline
+      equationOfState: 9
+      stdEntalpy: -3985340.0
+      stdGibbs: -4023861.0
+      stdEntropy: 129.2
+      stdVolume: 11.431
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 368.0
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.493E-4
+         b5: -9.0
+         b6: 173000.0
+         b7: -0.393E-4
+         b8: 6.84
+   # ---
+   silica.Liquid:
+      abbreviation: q.L
+      formula: quartz
+      components: quartz
+      equationOfState: 9
+      stdEntalpy: -921080.0
+      stdGibbs: -925939.8
+      stdEntropy: 16.3
+      stdVolume: 2.73
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 82.5
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: -35.0
+         b5: 0.0
+         b6: 220000
+         b7: -0.43E-4
+         b8: 9.46
+   # ---
+   sillimanite.Liquid:
+      abbreviation: sil.L
+      formula: sillimanite
+      components: sillimanite
+      equationOfState: 9
+      stdEntalpy: -2593510.0
+      stdGibbs: -2596491.0
+      stdEntropy: 10.0
+      stdVolume: 6.051
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 253.0
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.408E-4
+         b5: -29.0
+         b6: 220000.0
+         b7: -0.289E-4
+         b8: 6.36
+
