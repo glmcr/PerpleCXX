@@ -3602,6 +3602,663 @@ phasesEntities:
             t5: 0.0
             t6: 0.0
             t7: 0.0             
+   # ---
+   magnetite:
+      abbreviation: mt
+      formula: Fe3O4
+      components:
+         FeO: 3
+         O2: 0.5
+      equationOfState: 8
+      stdEntalpy: -1114200.0
+      stdGibbs: -1157998.0
+      stdEntropy: 146.9
+      stdVolume: 4.452
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 262.5
+         c2: -0.7205E-2
+         c3: -1926200.0
+         c4: 0.0
+         c5: -1655.7
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.371E-4
+         b5: 387.8112
+         b6: 1857000.0
+         b7: -0.22E-5
+         b8: 4.05
+      transition:
+         1:
+            type: 4
+            t1: 848.0
+            t2: 35.0
+            t3: 0.0
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
+   # ---
+   manganosite:
+      abbreviation: mang
+      formula: MnO
+      components:
+         MnO: 1
+      equationOfState: 8
+      stdEntalpy: -385570.0
+      stdGibbs: -403369.6
+      stdEntropy: 59.7
+      stdVolume: 1.322
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 59.8
+         c2: 0.36E-2
+         c3: -31400.0
+         c4: 0.0
+         c5: -282.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.369E-4
+         b5: 293.0835
+         b6: 1645000.0
+         b7: -0.27E-5
+         b8: 4.46
+   # ---
+   nickelOxide:
+      abbreviation: NiO
+      formula: NiO
+      components:
+         NiO: 1
+      equationOfState: 8
+      stdEntalpy: -239470.0
+      stdGibbs: -250799.7
+      stdEntropy: 38.0
+      stdVolume: 1.097
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 47.7
+         c2: 0.7824E-2
+         c3: -392500.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.33E-4
+         b5: 418.0818
+         b6: 2000000.0
+         b7: -0.2E-5
+         b8: 3.94
+      transition:
+         1:
+            type: 4
+            t1: 520.0
+            t2: 5.7
+            t3: 0.0
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
+   # ---
+   periclase:
+      abbreviation: per
+      formula: MgO
+      components:
+         MgO: 1
+      equationOfState: 8
+      stdEntalpy: -601600.0
+      stdGibbs: -609501.0
+      stdEntropy: 26.5
+      stdVolume: 1.125
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 60.5
+         c2: 0.362E-3
+         c3: -535800.0
+         c4: 0.0
+         c5: -299.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.311E-4
+         b5: 540.1727
+         b6: 1616000.0
+         b7: -0.24E-5
+         b8: 3.95
+   # ---
+   pyrophanite:
+      abbreviation: pnt
+      formula: MnTiO3
+      components:
+         MnO: 1
+         TiO2: 1
+      equationOfState: 8
+      stdEntalpy: -1361500.0
+      stdGibbs: -1392955.0
+      stdEntropy: 105.5
+      stdVolume: 3.288
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 143.5
+         c2: 0.3373E-2
+         c3: -1940700.0
+         c4: 0.0
+         c5: -407.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.24E-4
+         b5: 386.2019
+         b6: 1700000.0
+         b7: -0.49E-5
+         b8: 8.3
+   # ---
+   rutile:
+      abbreviation: ru
+      formula: TiO2
+      components:
+         TiO2: 1
+      equationOfState: 8
+      stdEntalpy: -944160.0
+      stdGibbs: -959216.6
+      stdEntropy: 50.5
+      stdVolume: 1.882
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 90.4
+         c2: 0.29E-2
+         c3: 0.0
+         c4: 0.0
+         c5: -623.8
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.224E-4
+         b5: 457.0037
+         b6: 2220000.0
+         b7: -0.19E-5
+         b8: 4.24
+   # ---
+   spinel:
+      abbreviation: sp
+      formula: MgAl2O4
+      components:
+         MgO: 1
+         Al2O3: 1
+      equationOfState: 8
+      stdEntalpy: -2300180.0
+      stdGibbs: -2324220.0
+      stdEntropy: 80.63
+      stdVolume: 3.978
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 200.5
+         c2: 0.6252E-2
+         c3: -2996400.0
+         c4: 0.0
+         c5: -888.4
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.193E-4
+         b5: 592.252
+         b6: 1922000.0
+         b7: -0.21E-5
+         b8: 4.04
+      transition:
+         1:
+            type: 5
+            t1: 13930
+            t2: 0.0
+            t3: -3600
+            t4: 0.0
+            t5: 2.0
+            t6: 0.66666666667
+            t7: 0.0         
+   # ---      
+   ulvospinel:
+      abbreviation: usp
+      formula: Fe2TiO4
+      components:
+         FeO: 2
+         TiO2: 1
+      equationOfState: 8
+      stdEntalpy: -1494180.0
+      stdGibbs: -1545164.0
+      stdEntropy: 171.0
+      stdVolume: 4.682
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 129.5
+         c2: 0.48696E-1
+         c3: -3739000.0
+         c4: 0.0
+         c5: 690.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.386E-4
+         b5: 344.5576
+         b6: 1470000.0
+         b7: -0.272E-5
+         b8: 4.0        
+      transition:
+         1:
+            type: 5
+            t1: 1000.0
+            t2: 0.0
+            t3: 900
+            t4: 0.0
+            t5: 1.0
+            t6: 0.5
+            t7: 0.0
+   # ---         
+   brucite:
+      abbreviation: br
+      formula: Mg(OH)2
+      components:
+         MgO: 1
+         H2O: 1
+      equationOfState: 8
+      stdEntalpy: -925620.0
+      stdGibbs: -944463.1
+      stdEntropy: 63.2
+      stdVolume: 2.463
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 158.4
+         c2: -0.4076E-2
+         c3: -1052300.0
+         c4: 0.0
+         c5: -1171.3
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.62E-4
+         b5: 557.4423
+         b6: 415000.0
+         b7: -0.155E-4
+         b8: 6.45
+   # ---
+   diaspore:
+      abbreviation: dsp
+      formula: AlO(OH)
+      components:
+         Al2O3: 0.5
+         H2O : 0.5
+      equationOfState: 8
+      stdEntalpy: -999810.0
+      stdGibbs: -1010096.0
+      stdEntropy: 34.5
+      stdVolume: 1.786
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 145.1
+         c2: 0.8709E-2
+         c3: 584400.0
+         c4: 0.0
+         c5: -1741.1
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.357E-4
+         b5: 706.0073
+         b6: 2280000.0
+         b7: -0.18E-5
+         b8: 4.04
+   # ---
+   goethite:
+      abbreviation: gth
+      formula: FeO(OH)
+      components:
+         Fe2O3: 1
+         H2O: 0.5
+         O2: 0.25
+      equationOfState: 8
+      stdEntalpy: -561670.0
+      stdGibbs: -579648.4
+      stdEntropy: 60.3
+      stdVolume: 2.082
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 139.3
+         c2: 0.147E-3
+         c3: -212700.0
+         c4: 0.0
+         c5: -1077.8
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.435E-4
+         b5: 494.3528
+         b6: 2500000.0
+         b7: -0.16E-5
+         b8: 4.03
+   # ---
+   ankerite:
+      abbreviation: ank
+      formula: CaFe(CO3)2
+      components:
+         CaO: 1
+         FeO 1
+         CO2: 2
+      equationOfState: 8
+      stdEntalpy: -1971340.0
+      stdGibbs: -2027529.0
+      stdEntropy: 188.46
+      stdVolume: 6.606
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 341.0
+         c2: -0.1161E-2
+         c3: 0.0
+         c4: 0.0
+         c5: -3054.8
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.346E-4
+         b5: 420.628
+         b6: 914000.0
+         b7: -0.43E-5
+         b8: 3.88
+      transition:
+         1:
+            type: 5
+            t1: 11910.0
+            t2: 0.16E-1
+            t3: 11900
+            t4: 0.16E-1
+            t5: 1.0
+            t6: 1.0
+            t7: 0.0
+   # ---
+   aragonite:
+      abbreviation: arag
+      formula: CaCO3
+      components:
+         CaO: 1
+         CO2: 1
+      equationOfState: 8
+      stdEntalpy: -1207690.0
+      stdGibbs: -1234464.0
+      stdEntropy: 89.8
+      stdVolume: 3.415
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 167.1
+         c2: 0.10695E-1
+         c3: 162000.0
+         c4: 0.0
+         c5: -1564.9
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.614E-4
+         b5: 435.9016
+         b6: 614000.0
+         b7: -0.96E-5
+         b8: 5.87
+   # ---
+   calcite:
+      abbreviation: cc
+      formula: CaCO3
+      components:
+         CaO: 1
+         CO2: 1
+      equationOfState: 8
+      stdEntalpy: -1207790.0
+      stdGibbs: -1235369.0
+      stdEntropy: 92.5
+      stdVolume: 3.689
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 140.9
+         c2: 0.5029E-2
+         c3: -950700.0
+         c4: 0.0
+         c5: -858.4
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.252E-4
+         b5: 426.4635
+         b6: 733000.0
+         b7: -0.55E-5
+         b8: 4.06
+      transition:
+         1:
+            type: 4
+            t1: 1240.0
+            t2: 10.0
+            t3: 0.4E-1
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
+   # ---
+   dolomite:
+      abbreviation: dol
+      formula: CaMg(CO3)2
+      components:
+         CaO: 1
+         MgO: 1
+         CO2: 2
+      equationOfState: 8
+      stdEntalpy: -2326270.0
+      stdGibbs: -2372811.0
+      stdEntropy: 156.1
+      stdVolume: 6.429
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 358.9
+         c2: -0.4905E-2
+         c3: 0.0
+         c4: 0.0
+         c5: -3456.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.328E-4
+         b5: 482.3583
+         b6: 943000.0
+         b7: -0.4E-5
+         b8: 3.74
+      transition:
+         1:
+            type: 5
+            t1: 11910.0
+            t2: 0.16E-1
+            t3: 11900
+            t4: 0.16E-1
+            t5: 1.0
+            t6: 1.0
+            t7: 0.0
+   # ---
+   magnesite:
+      abbreviation: mag
+      formula: MgCO3
+      components:
+         MgO: 1
+         CO2: 1
+      equationOfState: 8
+      stdEntalpy: -1110910.0
+      stdGibbs: -1130439.0
+      stdEntropy: 65.5
+      stdVolume: 2.803
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 186.4
+         c2: -0.3772E-2
+         c3: 0.0
+         c4: 0.0 
+         c5: -1886.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.338E-4
+         b5: 544.3193
+         b6: 1028000.0
+         b7: -0.53E-5
+         b8: 5.41
+   # ---
+   rhodochrosite:
+      abbreviation: rhc
+      formula: MnCO3
+      components:
+         MnO: 1
+         CO2: 1
+      equationOfState: 8
+      stdEntalpy: -892280.0
+      stdGibbs: -921498.7
+      stdEntropy: 98.0
+      stdVolume: 3.107
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 169.5
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: -1534.3
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.244E-4
+         b5: 408.4485
+         b6: 953000.0
+         b7: -0.41E-5
+         b8: 3.88
+   # ---
+   siderite:
+      abbreviation: sid
+      formula: FeCO3
+      components:
+         FeO: 1
+         CO2: 1
+      equationOfState: 8
+      stdEntalpy: -762120.0
+      stdGibbs: -789937.4
+      stdEntropy: 93.3
+      stdVolume: 2.943
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 168.4
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: -1483.6
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.439E-4
+         b5: 423.745
+         b6: 1200000.0
+         b7: -0.34E-5
+         b8: 4.07
+   # ---
+   nickel:
+      abbreviation: Ni
+      formula: Ni
+      components:
+         NiO: 1
+         O2: -0.5
+      equationOfState: 8
+      stdEntalpy: 0.000000
+      stdGibbs: -8905.74
+      stdEntropy: 29.87
+      stdVolume: 0.659
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 49.8
+         c2: 0.0
+         c3: 585900.0
+         c4: 0.0
+         c5: -533.9
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.428E-4
+         b5: 292.9221
+         b6: 1905000.0
+         b7: -0.22E-5
+         b8: 4.25
+      transition:
+         1:
+            type: 4
+            t1: 631.0
+            t2: 3.0
+            t3: 0.0
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
+   # ---
+   iron:
+      abbreviation: Fe
+      formula: Fe
+      components:
+         FeO: 1
+         O2: -0.5
+      equationOfState: 8
+      stdEntalpy: 0.000000
+      stdGibbs: -8076.883
+      stdEntropy: 27.09
+      stdVolume: .709
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 46.2
+         c2: 0.5159E-2
+         c3: 723100.0
+         c4: 0.0
+         c5: -556.2
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.356E-4
+         b5: 317.2085
+         b6: 1640000.0
+         b7: -0.31E-5
+         b8: 5.16
+      transition:
+         1:
+            type: 4
+            t1: 1042.0
+            t2: 8.3
+            t3: 0.0
+            t4: 0.0
+            t5: 0.0
+            t6: 0.0
+            t7: 0.0
+   # ---
+   diamond:
+      abbreviation: diam
+      formula: C
+      components:
+         CO2: 1
+         O2: -0.5
+      equationOfState: 8
+      stdEntalpy: 1890.000
+      stdGibbs: 1186.366
+      stdEntropy: 2.36
+      stdVolume: 0.342
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 40.0
+         c2: 0.0
+         c3: -28500.0
+         c4: 0.0
+         c5: -580.5
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.4E-5
+         b5: 1208.636
+         b6: 4465000.0
+         b7: -0.36E-6
+         b8: 1.61
+         
 # ---
    # ---
 #   phase:
