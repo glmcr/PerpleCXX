@@ -484,7 +484,7 @@ endMembers:
       abbreviation: fo8L
       make:
          # --- fo8L = 2 foL
-         forsteriteLiquid: 2.0
+         forsterite.Liquid: 2.0
       DQF:
          # --- DQF(J/mol) = -10d3
          units: joule/mole
@@ -496,7 +496,7 @@ endMembers:
       abbreviation: fa8L
       make:
          # --- fa8L = 2 faL
-         fayaliteLiquid: 2.0
+         fayalite.Liquid: 2.0
       DQF:
          # --- DQF(J/mol) = -9d3 0 -1.3
          units: joule/mole
@@ -508,7 +508,7 @@ endMembers:
       abbreviation: q8L
       make:
          # --- q8L = 4 qL
-         silicaLiquid: 4.0
+         silica.Liquid: 4.0
       DQF:
          # --- a small DQF is added to stabilize q8L relative to q
          #     DQF(J/mol) = -20
@@ -767,7 +767,7 @@ endMembers:
       abbreviation: qjL
       make:
          # --- qjL = 2 qL
-         silicaLiquid: 2.0
+         silica.Liquid: 2.0
       DQF:
          # --- DQF(J/mol) = 4d3     - 0.43 * p_bar
          units: joule/mole
@@ -779,7 +779,7 @@ endMembers:
       abbreviation: dijL
       make:
          # --- dijL = 1 diL
-         diopsideLiquid: 1.0
+         diopside.Liquid: 1.0
       DQF:
          # --- DQF(J/mol) = -6.7d3  + 0.17 * p_bar
          units: joule/mole
@@ -791,8 +791,8 @@ endMembers:
       abbreviation: jdjL
       make:
          # --- jdjL = = 1 abL - 1 qL
-         albiteLiquid: 1.0
-         silicaLiquid: -1.0
+         albite.Liquid: 1.0
+         silica.Liquid: -1.0
       DQF:
          # --- DQF(J/mol) = 18.7d3  - 0.16 * p_bar
          units: joule/mole
@@ -804,8 +804,8 @@ endMembers:
       abbreviation: ctjL
       make:
          # --- ctjL= 1 anL - 1 qL
-         anorthiteLiquid: 1.0
-         silicaLiquid: -1.0
+         anorthite.Liquid: 1.0
+         silica.Liquid: -1.0
       DQF:
          # --- DQF(J/mol) = 2.5d3   + 0.29 * p_bar
          units: joule/mole
@@ -817,7 +817,7 @@ endMembers:
       abbreviation: fojL
       make:
          # --- fojL= = 1 foL
-         forsteriteLiquid: 1.0
+         forsterite.Liquid: 1.0
       DQF:
          # --- DQF(J/mol) = 2d3     - 0.03 * p_bar
          units: joule/mole
@@ -829,7 +829,7 @@ endMembers:
       abbreviation: fajL
       make:
          # --- fajL= = 1 faL
-         fayaliteLiquid: 1.0
+         fayalite.Liquid: 1.0
       DQF:
          # --- DQF(J/mol) = -2.5d3  + 0.18 * p_bar
          units: joule/mole
@@ -841,7 +841,7 @@ endMembers:
       abbreviation: hmjL
       make:
          # --- hmjL= 0.5 hemL
-         hematiteLiquid: 1.0/2.0
+         hematite.Liquid: 1.0/2.0
       DQF:
          # --- DQF(J/mol) = :0   +  0.20 * p_bar
          units: joule/mole
@@ -853,7 +853,7 @@ endMembers:
       abbreviation: ekjL
       make:
          # --- ekjL= 0.5 eskL
-         eskolaiteLiquid: 1.0/2.0
+         eskolaite.Liquid: 1.0/2.0
       DQF:
          # --- DQF(J/mol) =  21d3
          units: joule/mole
@@ -865,7 +865,7 @@ endMembers:
       abbreviation: foTL
       make:
          # --- foTL= 2 foL
-         forsteriteLiquid: 2.0
+         forsterite.Liquid: 2.0
       DQF:
          # --- DQF(J/mol) = -4d3
          units: joule/mole
@@ -877,7 +877,7 @@ endMembers:
       abbreviation: faTL
       make:
          # --- faTL= 2 faL
-         fayaliteLiquid: 2.0
+         fayalite.Liquid: 2.0
       DQF:
          # --- DQF(J/mol) = -8.2d3  - 1.4 * P
          units: joule/mole
@@ -899,7 +899,7 @@ endMembers:
             constant: 0.0
             temperature: 0.0
             pressure: 0.0
-   kPargasite:
+   potassicPargasite:
       abbreviation: kprg
       make:
          # --- kprg  = 1 mu - 1 pa + 1 parg
@@ -1170,7 +1170,7 @@ endMembers:
             constant: -16200.0
             temperature: -1.2
             pressure: 0.005
-   kJadeiteHGP:
+   potassicJadeiteHGP:
       abbreviation: kjdh
       make:
          # --- kjdh  = 1 jd + 1 san - 1 abh
@@ -1245,7 +1245,7 @@ endMembers:
       abbreviation: foHL
       make:
          # --- foHL = 2 foL
-         forsteriteLiquid: 2.0
+         forsterite.Liquid: 2.0
       DQF:
          # --- DQF = 8.67d3    - 0.131*Pbar
          units: joule/mole
@@ -1257,7 +1257,7 @@ endMembers:
       abbreviation: faHL
       make:
          # --- faHL = 2 faL
-         fayaliteLiquid: 2.0
+         fayalite.Liquid: 2.0
       DQF:
          # --- DQF = 13.7d3    - 0.055*Pbar
          units: joule/mole
@@ -1269,7 +1269,7 @@ endMembers:
       abbreviation: faHL
       make:
          # --- qHL = 4 qL
-         silicaLiquid: 4.0
+         silica.Liquid: 4.0
       DQF:
          # --- DQF = 13.7d3    - 0.055*Pbar
          units: joule/mole
@@ -1281,8 +1281,8 @@ endMembers:
       abbreviation: jdL
       make:
          # --- jdL = 1 abL - 1 qL
-         albiteLiquid: 1.0
-         silicaLiquid: -1.0
+         albite.Liquid: 1.0
+         silica.Liquid: -1.0
       DQF:
          # --- DQF = 12.19d3  - 0.089*Pbar
          units: joule/mole
@@ -1294,7 +1294,7 @@ endMembers:
       abbreviation: hmL
       make:
          # --- hmL = 1/2 hemL
-         hematiteLiquid: 1.0/2.0
+         hematite.Liquid: 1.0/2.0
       DQF:
          # --- DQF = 3.3d3    - 0.032*Pbar
          units: joule/mole
@@ -1306,7 +1306,7 @@ endMembers:
       abbreviation: ekL
       make:
          # --- ekL = 1/2 eskL
-         eskolaiteLiquid: 1.0/2.0
+         eskolaite.Liquid: 1.0/2.0
       DQF:
          # --- DQF = 24.85d3  + 0.245*Pbar
          units: joule/mole
@@ -1318,7 +1318,7 @@ endMembers:
       abbreviation: tiL
       make:
          # --- tiL = 1 ruL
-         rutileLiquid: 1.0/2.0
+         rutile.Liquid: 1.0/2.0
       DQF:
          # --- DQF = 5.58d3   - 0.489*Pbar
          units: joule/mole
@@ -1330,8 +1330,8 @@ endMembers:
       abbreviation: kjL
       make:
          # --- kjL = 1 kspL - 1 qL
-         kFeldsparLiquid: 1.0
-         silicaLiquid: -1.0
+         potassicFeldspar.Liquid: 1.0
+         silica.Liquid: -1.0
       DQF:
          # --- DQF = 11.98d3  - 0.210*Pbar
          units: joule/mole
@@ -1343,7 +1343,7 @@ endMembers:
       abbreviation: foWL
       make:
          # --- foWL = 2 foL
-         forsteriteLiquid: 2.0
+         forsterite.Liquid: 2.0
       DQF:
          # --- DQF = 8.59d3     - 0.136*Pbar
          units: joule/mole
@@ -1355,7 +1355,7 @@ endMembers:
       abbreviation: foWL
       make:
          # --- faWL = 2 faL
-         fayaliteLiquid: 2.0
+         fayalite.Liquid: 2.0
       DQF:
          # --- DQF = 13.56d3    - 0.052*Pbar
          units: joule/mole
@@ -1367,7 +1367,7 @@ endMembers:
       abbreviation: qWL
       make:
          # --- qWL = 4 qL
-         silicaLiquid: 4.0
+         silica.Liquid: 4.0
       DQF:
          # --- DQF = 2.1d3     - 0.051*Pbar
          units: joule/mole
@@ -1379,8 +1379,8 @@ endMembers:
       abbreviation: jdWL
       make:
          # --- jdWL = 1 abL - 1 qL
-         albiteLiquid: 1.0
-         silicaLiquid: -1.0
+         albite.Liquid: 1.0
+         silica.Liquid: -1.0
       DQF:
          # --- DQF = 12.32d3   - 0.099*Pbar
          units: joule/mole
@@ -1388,12 +1388,12 @@ endMembers:
             constant: 12320.0
             temperature: 0.0
             pressure: -0.099
-   lowDensityFluidAndKFeldsparLiquid:
+   lowDensityFluidAndPotassicFeldsparLiquid:
       abbreviation: kWL
       make:
          # --- kWL = 1 kspL - 1 qL
-         kFeldsparLiquid: 1.0
-         silicaLiquid: -1.0
+         potassicFeldspar.Liquid: 1.0
+         silica.Liquid: -1.0
       DQF:
          # --- DQF = 12.88d3   - 0.227*Pbar
          units: joule/mole
@@ -1402,10 +1402,10 @@ endMembers:
             temperature: 0.0
             pressure: -0.227
    lowDensityFluidAndHematiteLiquid:
-      abbreviation: hmWL
+      abbreviation: hm.WL
       make:
          # --- hmWL = 1/2 hemL
-         hematiteLiquid: 1.0/2.0
+         hematite.Liquid: 1.0/2.0
       DQF:
          # --- DQF = 4.05d3    - 0.077*Pbar
          units: joule/mole
@@ -1414,10 +1414,10 @@ endMembers:
             temperature: 0.0
             pressure: -0.077
    lowDensityFluidAndRutileLiquid:
-      abbreviation: tiWL
+      abbreviation: ti.WL
       make:
-         # --- tiWL = 1 ruL
-         rutileLiquid: 1.0/2.0
+         # --- ti.WL = 1 ru.L
+         rutile.Liquid: 1.0/2.0
       DQF:
          # --- DQF = 5.6d3     - 0.489*Pbar
          units: joule/mole
