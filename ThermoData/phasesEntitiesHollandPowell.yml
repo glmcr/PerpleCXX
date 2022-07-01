@@ -1110,7 +1110,7 @@ phasesEntities:
          b7: -0.37E-5
          b8: 4.68
    # ---
-   tilleyite: 
+   tilleyite:
       abbreviation: ty
       formula: Ca5Si2O7(CO3)2
       components:
@@ -1172,7 +1172,7 @@ phasesEntities:
       abbreviation: zrc
       formula: ZrSiO4
       components:
-         ZrO2: 1 
+         ZrO2: 1
          SiO2: 1
       equationOfState: 8
       stdEntalpy: -2035140.0
@@ -1208,7 +1208,7 @@ phasesEntities:
       stdGibbs: -6984999.0
       stdEntropy: 298.0
       stdVolume: 13.575
-      cCoefficients: 
+      cCoefficients:
          # --- c1,c2,c3,c4,c5
          c1: 662.0
          c2: 0.10416E-1
@@ -1298,7 +1298,7 @@ phasesEntities:
          CaO: 1
          MgO: 1
          SiO2: 2
-      equationOfState:8
+      equationOfState: 8
       stdEntalpy: -3201780.0
       stdGibbs: -3244386.0
       stdEntropy: 142.9
@@ -1405,7 +1405,7 @@ phasesEntities:
       abbreviation: jd
       formula: NaAlSi2O6
       components:
-         Na2O 0.5
+         Na2O: 0.5
          Al2O3: 0.5
          SiO2: 2
       equationOfState: 8
@@ -1424,7 +1424,7 @@ phasesEntities:
          # --- b1,b5,b6,b7,b8
          #     No b2,b3,b4 it seems
          b1: 0.21E-4
-         b5: 537.4432 
+         b5: 537.4432
          b6: 1281000.0
          b7: -0.3E-5
          b8: 3.81
@@ -1540,8 +1540,8 @@ phasesEntities:
    # ---
    wollastonite:
       abbreviation: wo
-      formula: 
-      components:CaSiO3
+      formula: CaSiO3
+      components:
          CaO: 1
          SiO2: 1
       equationOfState: 8
@@ -1571,7 +1571,7 @@ phasesEntities:
       components:
          MgO: 7
          SiO2: 8
-         H20 : 1
+         H20: 1
       equationOfState: 8
       stdEntalpy: -12065900.0
       stdGibbs: -12226010.0
@@ -1622,7 +1622,7 @@ phasesEntities:
          b8: 4.11
    # ---
    ferroAnthophyllite:
-      abbreviation: fanth 
+      abbreviation: fanth
       formula: Fe7Si8O22(OH)2
       components:
          FeO: 7
@@ -1748,7 +1748,7 @@ phasesEntities:
          H2O: 1
       equationOfState: 8
       stdEntalpy: -11955920.0
-      stdGibbs:-12113940.0
+      stdGibbs: -12113940.0
       stdEntropy: 530
       stdVolume: 25.98
       cCoefficients:
@@ -2564,7 +2564,7 @@ phasesEntities:
       components:
          MgO: 48
          SiO2: 34
-         H2O: 31      
+         H2O: 31
       equationOfState: 8
       stdEntalpy: -71400990.0
       stdGibbs: -72480290.0
@@ -2749,7 +2749,7 @@ phasesEntities:
       bCoefficients:
          # --- b1,b5,b6,b7,b8
          #     No b2,b3,b4 it seems
-         b1: 0.18E-4 
+         b1: 0.18E-4
          b5: 566.5483
          b6: 430000.0
          b7: -0.144E-4
@@ -2882,7 +2882,7 @@ phasesEntities:
       transition:
          1:
             type: 5
-            t1: 42010.0 
+            t1: 42010.0
             t2: 0.1
             t3: 42000.0
             t4: 0.1
@@ -3004,7 +3004,7 @@ phasesEntities:
       formula: CaAl2Si4O124H2O
       components:
          CaO: 1
-         Al2O3: 1 
+         Al2O3: 1
          SiO2: 4
          H2O: 4
       equationOfState: 8
@@ -3092,14 +3092,14 @@ phasesEntities:
          b1: 0.181E-4
          b5: 452.0012
          b6: 870000.0
-         b7: -0.47E-5 
+         b7: -0.47E-5
          b8: 4.09
    ## ---
    ## Comment taken from hp622ver.dat:
    ## the microcline model is excluded [commented out] here,
    ## because the model does not extrapolate plausibly.
    ##
-   #microcline:
+   # microcline:
    #   abbreviation: mic
    #   formula: KAlSi3O8
    #   components:
@@ -3314,7 +3314,7 @@ phasesEntities:
       bCoefficients:
          # --- b1,b5,b6,b7,b8
          #     No b2,b3,b4 it seems
-         b1: 0.0 
+         b1: 0.0
          b5: 503.122
          b6: 150000.0
          b7: -0.291E-4
@@ -3601,7 +3601,7 @@ phasesEntities:
             t4: 0.0
             t5: 0.0
             t6: 0.0
-            t7: 0.0             
+            t7: 0.0
    # ---
    magnetite:
       abbreviation: mt
@@ -3816,8 +3816,8 @@ phasesEntities:
             t4: 0.0
             t5: 2.0
             t6: 0.66666666667
-            t7: 0.0         
-   # ---      
+            t7: 0.0
+   # ---
    ulvospinel:
       abbreviation: usp
       formula: Fe2TiO4
@@ -3843,7 +3843,7 @@ phasesEntities:
          b5: 344.5576
          b6: 1470000.0
          b7: -0.272E-5
-         b8: 4.0        
+         b8: 4.0
       transition:
          1:
             type: 5
@@ -3854,7 +3854,7 @@ phasesEntities:
             t5: 1.0
             t6: 0.5
             t7: 0.0
-   # ---         
+   # ---
    brucite:
       abbreviation: br
       formula: Mg(OH)2
@@ -3887,7 +3887,7 @@ phasesEntities:
       formula: AlO(OH)
       components:
          Al2O3: 0.5
-         H2O : 0.5
+         H2O: 0.5
       equationOfState: 8
       stdEntalpy: -999810.0
       stdGibbs: -1010096.0
@@ -3942,7 +3942,7 @@ phasesEntities:
       formula: CaFe(CO3)2
       components:
          CaO: 1
-         FeO 1
+         FeO: 1
          CO2: 2
       equationOfState: 8
       stdEntalpy: -1971340.0
@@ -4093,7 +4093,7 @@ phasesEntities:
          c1: 186.4
          c2: -0.3772E-2
          c3: 0.0
-         c4: 0.0 
+         c4: 0.0
          c5: -1886.2
       bCoefficients:
          # --- b1,b5,b6,b7,b8
@@ -4293,7 +4293,7 @@ phasesEntities:
          CO2: 1
       equationOfState: 102
       stdEntalpy: -393510.0
-      stdGibbs:  -457224.7
+      stdGibbs: -457224.7
       stdEntropy: 213.7
       # --- Could use a negative volume
       #     here to signals that the
@@ -4321,7 +4321,7 @@ phasesEntities:
       components:
          CO2: 1
          O2: -0.5
-      equationOfState: 103 
+      equationOfState: 103
       stdEntalpy: -110530.0
       stdGibbs: -169465.3
       stdEntropy: 197.67
@@ -4426,7 +4426,7 @@ phasesEntities:
    H2O.Fluid:
       abbreviation: H2O
       formula: H2O
-      components: 
+      components:
          H2O: 1
       equationOfState: 101
       stdEntalpy: -241810.0
@@ -4698,4 +4698,3 @@ phasesEntities:
          b6: 220000.0
          b7: -0.289E-4
          b8: 6.36
-
