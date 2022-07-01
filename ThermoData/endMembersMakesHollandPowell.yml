@@ -1416,7 +1416,7 @@ endMembers:
    lowDensityFluidAndRutileLiquid:
       abbreviation: ti.WL
       make:
-         # --- ti.WL = 1 ru.L
+         # --- ti.WL = 1 ruL
          rutile.Liquid: 1.0/2.0
       DQF:
          # --- DQF = 5.6d3     - 0.489*Pbar
