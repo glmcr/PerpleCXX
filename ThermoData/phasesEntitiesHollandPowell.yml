@@ -4450,7 +4450,7 @@ phasesEntities:
          b8: 0.0
    # ---
    anorthite.Liquid:
-      abbreviation: an.L
+      abbreviation: anL
       formula: anorthite
       components: anorthite
       equationOfState: 9
@@ -4475,7 +4475,7 @@ phasesEntities:
          b8: 6.38
    # ---
    albite.Liquid:
-      abbreviation: ab.L
+      abbreviation: abL
       formula: albite
       components: albite
       equationOfState: 9
@@ -4500,7 +4500,7 @@ phasesEntities:
          b8: 14.35
    # ---
    diopside.Liquid:
-      abbreviation: di.L
+      abbreviation: diL
       formula: diopside
       components: diopside
       equationOfState: 9
@@ -4525,7 +4525,7 @@ phasesEntities:
          b8: 8.04
    # ---
    enstatite.Liquid:
-      abbreviation: en.L
+      abbreviation: enL
       formula: enstatite
       components: enstatite
       equationOfState: 9
@@ -4550,7 +4550,7 @@ phasesEntities:
          b8: 7.2
    # ---
    fayalite.Liquid:
-      abbreviation: fa.L
+      abbreviation: faL
       formula: fayalite
       components: fayalite
       equationOfState: 9
@@ -4575,7 +4575,7 @@ phasesEntities:
          b8: 10.42
    # ---
    forsterite.Liquid:
-      abbreviation: fo.L
+      abbreviation: foL
       formula: forsterite
       components: forsterite
       equationOfState: 9
@@ -4600,7 +4600,7 @@ phasesEntities:
          b8: 10.06
    # ---
    H2O.Liquid:
-      abbreviation: H2O.L
+      abbreviation: H2OL
       formula: H2O.Fluid
       components: H2O.Fluid
       equationOfState: 9
@@ -4625,7 +4625,7 @@ phasesEntities:
          b8: 4.0
    # ---
    potassicFeldspar.Liquid:
-      abbreviation: ksp.L
+      abbreviation: kspL
       formula: microcline
       components: microcline
       equationOfState: 9
@@ -4650,7 +4650,7 @@ phasesEntities:
          b8: 6.84
    # ---
    silica.Liquid:
-      abbreviation: q.L
+      abbreviation: qL
       formula: quartz
       components: quartz
       equationOfState: 9
@@ -4675,7 +4675,7 @@ phasesEntities:
          b8: 9.46
    # ---
    sillimanite.Liquid:
-      abbreviation: sil.L
+      abbreviation: silL
       formula: sillimanite
       components: sillimanite
       equationOfState: 9
