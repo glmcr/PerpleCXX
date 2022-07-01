@@ -4451,8 +4451,8 @@ phasesEntities:
    # ---
    anorthite.Liquid:
       abbreviation: anL
-      formula: anorthite
-      components: anorthite
+      formula: ^anorthite
+      components: ^anorthite
       equationOfState: 9
       stdEntalpy: -4277920.0
       stdGibbs: -4286566.0
@@ -4476,11 +4476,11 @@ phasesEntities:
    # ---
    albite.Liquid:
       abbreviation: abL
-      formula: albite
-      components: albite
+      formula: ^albite
+      components: ^albite
       equationOfState: 9
-      stdEntalpy: -3925410.
-      stdGibbs: -3970103
+      stdEntalpy: -3925410.0
+      stdGibbs: -3970103.0
       stdEntropy: 149.9
       stdVolume: 10.858
       cCoefficients:
@@ -4499,10 +4499,35 @@ phasesEntities:
          b7: -0.815E-4
          b8: 14.35
    # ---
+   wollastonite.Liquid:
+      abbreviation: woL
+      formula: ^wollastonite
+      components: ^wollastonite
+      equationOfState: 9
+      stdEntalpy: -1642570.0
+      stdGibbs: -1649278.0
+      stdEntropy: 22.5
+      stdVolume: 3.985
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 167.4
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.669E-4
+         b5: -20.0
+         b6: 325000.0
+         b7: -0.308E-4
+         b8: 9.38
+   # ---
    diopside.Liquid:
       abbreviation: diL
-      formula: diopside
-      components: diopside
+      formula: ^diopside
+      components: ^diopside
       equationOfState: 9
       stdEntalpy: -3193790.0
       stdGibbs: -3206342.0
@@ -4526,8 +4551,8 @@ phasesEntities:
    # ---
    enstatite.Liquid:
       abbreviation: enL
-      formula: enstatite
-      components: enstatite
+      formula: ^enstatite
+      components: ^enstatite
       equationOfState: 9
       stdEntalpy: -3096310.0
       stdGibbs: -3095117.0
@@ -4551,8 +4576,8 @@ phasesEntities:
    # ---
    fayalite.Liquid:
       abbreviation: faL
-      formula: fayalite
-      components: fayalite
+      formula: ^fayalite
+      components: ^fayalite
       equationOfState: 9
       stdEntalpy: -1462820.0
       stdGibbs: -1491442.0
@@ -4576,8 +4601,8 @@ phasesEntities:
    # ---
    forsterite.Liquid:
       abbreviation: foL
-      formula: forsterite
-      components: forsterite
+      formula: ^forsterite
+      components: ^forsterite
       equationOfState: 9
       stdEntalpy: -2237250.0
       stdGibbs: -2218765.0
@@ -4601,8 +4626,8 @@ phasesEntities:
    # ---
    H2O.Liquid:
       abbreviation: H2OL
-      formula: H2O.Fluid
-      components: H2O.Fluid
+      formula: ^H2O.Fluid
+      components: ^H2O.Fluid
       equationOfState: 9
       stdEntalpy: -281650.0
       stdGibbs: -301506.8
@@ -4626,8 +4651,8 @@ phasesEntities:
    # ---
    potassicFeldspar.Liquid:
       abbreviation: kspL
-      formula: microcline
-      components: microcline
+      formula: ^microcline
+      components: ^microcline
       equationOfState: 9
       stdEntalpy: -3985340.0
       stdGibbs: -4023861.0
@@ -4651,8 +4676,8 @@ phasesEntities:
    # ---
    silica.Liquid:
       abbreviation: qL
-      formula: quartz
-      components: quartz
+      formula: ^quartz
+      components: ^quartz
       equationOfState: 9
       stdEntalpy: -921080.0
       stdGibbs: -925939.8
@@ -4676,8 +4701,8 @@ phasesEntities:
    # ---
    sillimanite.Liquid:
       abbreviation: silL
-      formula: sillimanite
-      components: sillimanite
+      formula: ^sillimanite
+      components: ^sillimanite
       equationOfState: 9
       stdEntalpy: -2593510.0
       stdGibbs: -2596491.0
@@ -4698,3 +4723,63 @@ phasesEntities:
          b6: 220000.0
          b7: -0.289E-4
          b8: 6.36
+      DQF:
+         # --- dqf = 6.72d3  -0.313*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 6720.0
+            temperature: 0.0
+            pressure: -0.313
+   # ---
+   sylvite:
+      abbreviation: syv
+      formula: KCl
+      components:
+         K2O: 0.5
+         Cl2: 0.5
+         O2: -0.25
+      equationOfState: 8
+      stdEntalpy: -436500.0
+      stdGibbs: -461127.2
+      stdEntropy: 82.6
+      stdVolume: 3.752
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 46.2
+         c2: 0.1797E-1
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.1109E-3
+         b5: 222.7901
+         b6: 170000.0
+         b7: -0.294E-4
+         b8: 5.0
+   # ---
+   sylvite.Liquid:
+      abbreviation: syvL
+      formula: ^sylvite
+      components: ^sylvite
+      equationOfState: 9
+      stdEntalpy: -417410.0
+      stdGibbs: -445585.2
+      stdEntropy: 94.5
+      stdVolume: 3.822
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 66.9
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.301E-3
+         b5: -20.0
+         b6: 56000.0
+         b7: -0.83E-4
+         b8: 4.65
