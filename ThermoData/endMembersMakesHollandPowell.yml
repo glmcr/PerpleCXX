@@ -472,7 +472,7 @@ endMembers:
       abbreviation: sil8L
       make:
          # --- sil8L = 8/5 silL
-         sillimanite: 8.0/5.0
+         sillimanite.Liquid: 8.0/5.0
       DQF:
          # --- DQF(J/mol) = -23d3
          units: joule/mole
