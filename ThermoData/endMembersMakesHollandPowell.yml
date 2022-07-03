@@ -1425,3 +1425,15 @@ endMembers:
             constant: 5600.0
             temperature: 0.0
             pressure: -0.489
+   lowDensityFluidAndEskolaiteLiquid:
+      abbreviation: ek.WL
+      make:
+         # --- ekWL = 1/2 eskL
+         eskolaite.Liquid: 1.0/2.0
+      DQF:
+         # --- DQF = 24.75d3   + 0.245*Pbar
+         units: joule/mole
+         coefficients:
+            constant: 24750.0
+            temperature: 0.0
+            pressure: 0.245

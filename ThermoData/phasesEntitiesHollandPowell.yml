@@ -277,6 +277,32 @@ phasesEntities:
          b7: -0.37E-5
          b8: 4.68
    # ---
+   eskolaite:
+      abbreviation: esk
+      formula: Cr2O3
+      components:
+         Cr2O3: 1
+      equationOfState: 8
+      stdEntalpy: -1128170.0
+      stdGibbs: -1152916.0
+      stdEntropy: 83.0
+      stdVolume: 2.898
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 119
+         c2: 0.9496E-2
+         c3: -1442000.0
+         c4: 0.0
+         c5: -3.4
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.159E-4
+         b5: 461.6319
+         b6: 2450000.0
+         b7: -0.15E-5 
+         b8: 3.6
+   # ---
    ferroChloritoid:
       abbreviation: fctd
       formula: FeAl2SiO5(OH)2
@@ -4783,3 +4809,28 @@ phasesEntities:
          b6: 56000.0
          b7: -0.83E-4
          b8: 4.65
+   # ---
+   eskolaite.Liquid:
+      abbreviation: eskL
+      formula: ^eskolaite
+      components: ^eskolaite
+      equationOfState: 9
+      stdEntalpy: -1062180.0
+      stdGibbs: -1081053.0
+      stdEntropy: 63.3
+      stdVolume: 3.709
+      cCoefficients:
+         # --- c1,c2,c3,c4,c5
+         c1: 157.6
+         c2: 0.0
+         c3: 0.0
+         c4: 0.0
+         c5: 0.0
+      bCoefficients:
+         # --- b1,b5,b6,b7,b8
+         #     No b2,b3,b4 it seems
+         b1: 0.703E-4
+         b5: -35.0
+         b6: 150000.0
+         b7: 0.4E-4
+         b8: 6.0
