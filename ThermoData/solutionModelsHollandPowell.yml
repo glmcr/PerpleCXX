@@ -1,0 +1,16 @@
+---
+"Aqueous low density silicate fluid/melt: Holland, Green, &Powell; J Pet, 2018":
+   modelTypeNumber: 2
+   modelTypeName: simplicialCompositionSpace
+   endMembers:
+      - H2O.Fluid
+      - sillimanite.Liquid
+      - wollastonite.Liquid
+      - lowDensityFluidAndRutileLiquid
+      - lowDensityFluidAndSilicaLiquid
+      - lowDensityFluidAndJadeiteLiquid
+      - lowDensityFluidAndFayaliteLiquid
+      - lowDensityFluidAndHematiteLiquid
+      - lowDensityFluidAndEskolaiteLiquid
+      - lowDensityFluidAndForsteriteLiquid
+      - lowDensityFluidAndPotassicFeldsparLiquid
