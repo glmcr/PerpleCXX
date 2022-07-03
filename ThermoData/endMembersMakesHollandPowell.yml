@@ -1352,7 +1352,7 @@ endMembers:
             temperature: 0.0
             pressure: -0.136
    lowDensityFluidAndFayaliteLiquid:
-      abbreviation: foWL
+      abbreviation: faWL
       make:
          # --- faWL = 2 faL
          fayalite.Liquid: 2.0
