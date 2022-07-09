@@ -2,15 +2,119 @@
 "Aqueous low density silicate fluid/melt: Holland, Green, &Powell; J Pet, 2018":
    modelTypeNumber: 2
    modelTypeName: simplicialCompositionSpace
+   subdivisionScheme: comformalNonlinear
    endMembers:
-      - H2O.Fluid
-      - sillimanite.Liquid
-      - wollastonite.Liquid
-      - lowDensityFluidAndRutileLiquid
-      - lowDensityFluidAndSilicaLiquid
-      - lowDensityFluidAndJadeiteLiquid
-      - lowDensityFluidAndFayaliteLiquid
-      - lowDensityFluidAndHematiteLiquid
-      - lowDensityFluidAndEskolaiteLiquid
-      - lowDensityFluidAndForsteriteLiquid
-      - lowDensityFluidAndPotassicFeldsparLiquid
+      #--- The most important end member is always the 1st one.
+      H2O.Fluid:
+        flag: 1
+      sillimanite.Liquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            #--- W(silL H2O)   57.6d3   0  -0.80
+            constant: 57.6e3 
+            temperature: 0.0
+            pressure: -0.80
+      wollastonite.Liquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 57.6e3
+            temperature: 0.0
+            pressure: -0.67
+      lowDensityFluidAndRutileLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 75e3
+            temperature: 0.0
+            pressure: -0.67
+      lowDensityFluidAndSilicaLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 59000.0
+            temperature: 0.0
+            pressure: -0.82
+      lowDensityFluidAndJadeiteLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 57e3
+            temperature: 0.0
+            pressure: -0.79
+      lowDensityFluidAndFayaliteLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 71.7e3
+            temperature: 0.0
+            pressure: -1.10
+      lowDensityFluidAndHematiteLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 73e3
+            temperature: 0.0
+            pressure: -0.66
+      lowDensityFluidAndEskolaiteLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 73e3
+            temperature: 0.0
+            pressure: -0.66
+      lowDensityFluidAndForsteriteLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 71.7e3
+            temperature: 0.0
+            pressure: -1.10
+      lowDensityFluidAndPotassicFeldsparLiquid:
+         flag: 1
+         rangeAndResolutionOfX:
+            #scheme: comformalNonlinear
+            xMin: 1e-4
+            xMax: 0.2
+            xInc: 0.2
+         excessFunction:
+            constant: 44.9e3
+            temperature: 0.0
+            pressure: -1.19

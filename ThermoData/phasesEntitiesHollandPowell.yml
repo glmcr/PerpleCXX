@@ -4549,6 +4549,13 @@ phasesEntities:
          b6: 325000.0
          b7: -0.308E-4
          b8: 9.38
+      DQF:
+         #--- dqf(woL)  = -0.22d3  -0.12 *Pbar
+         units: joule/mole
+         coefficients:
+            constant: -220.0
+            temperature: 0.0
+            pressure: -0.12
    # ---
    diopside.Liquid:
       abbreviation: diL
